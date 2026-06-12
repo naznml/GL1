@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Unit 1 — Listening Practice</title>
+  <title>General English Listening</title>
 
   <style>
     :root{
@@ -22,7 +22,11 @@
     }
 
     *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
+
+    html{
+      scroll-behavior:smooth;
+    }
+
     body{
       margin:0;
       font-family:Inter, Arial, sans-serif;
@@ -34,9 +38,9 @@
     .topbar{
       position:sticky;
       top:0;
-      z-index:50;
+      z-index:100;
       backdrop-filter:blur(18px);
-      background:rgba(255,255,255,.86);
+      background:rgba(255,255,255,.88);
       border-bottom:1px solid rgba(227,230,242,.9);
     }
 
@@ -101,7 +105,11 @@
       overflow:hidden;
     }
 
-    .hero-content{position:relative;z-index:2;max-width:780px}
+    .hero-content{
+      position:relative;
+      z-index:2;
+      max-width:790px;
+    }
 
     .badge{
       display:inline-flex;
@@ -123,7 +131,7 @@
     .hero-sub{
       margin:18px 0 0;
       font-size:18px;
-      max-width:690px;
+      max-width:720px;
       color:rgba(255,255,255,.92);
     }
 
@@ -203,7 +211,8 @@
       box-shadow:0 14px 35px rgba(23,32,51,.07);
     }
 
-    .section h2,.section h3{
+    .section h2,
+    .section h3{
       margin:0;
       letter-spacing:-.5px;
     }
@@ -271,12 +280,8 @@
       gap:6px;
     }
 
-    .small-btn:hover{background:var(--soft)}
-
-    .audio-hint{
-      margin:8px 0 0;
-      font-size:13px;
-      color:var(--muted);
+    .small-btn:hover{
+      background:var(--soft);
     }
 
     .tabs{
@@ -305,8 +310,13 @@
       color:#fff;
     }
 
-    .tab-content{display:none}
-    .tab-content.active{display:block}
+    .tab-content{
+      display:none;
+    }
+
+    .tab-content.active{
+      display:block;
+    }
 
     .transcript{
       background:#f8f9ff;
@@ -382,8 +392,13 @@
       transition:.15s;
     }
 
-    .option:hover{background:#f8f9ff}
-    .option input{margin-right:8px}
+    .option:hover{
+      background:#f8f9ff;
+    }
+
+    .option input{
+      margin-right:8px;
+    }
 
     .explain{
       display:none;
@@ -395,9 +410,19 @@
       color:#33415f;
     }
 
-    .question.checked .explain{display:block}
-    .question.correct{border-color:rgba(15,159,110,.45);background:#f4fffb}
-    .question.wrong{border-color:rgba(214,69,69,.42);background:#fff6f6}
+    .question.checked .explain{
+      display:block;
+    }
+
+    .question.correct{
+      border-color:rgba(15,159,110,.45);
+      background:#f4fffb;
+    }
+
+    .question.wrong{
+      border-color:rgba(214,69,69,.42);
+      background:#fff6f6;
+    }
 
     .result{
       display:none;
@@ -426,35 +451,37 @@
       margin-top:12px;
     }
 
-    .placeholder{
-      padding:18px;
-      border-radius:20px;
-      background:#f8f9ff;
-      border:1px dashed #ccd1ff;
-      color:var(--muted);
-    }
-
     .hidden-speech{
       display:none;
     }
 
-    footer{
-      margin-top:50px;
-      color:var(--muted);
-      text-align:center;
-      font-size:14px;
-    }
-
     @media(max-width:1050px){
-      .blocks{grid-template-columns:repeat(2,1fr)}
+      .blocks{
+        grid-template-columns:repeat(2,1fr);
+      }
     }
 
     @media(max-width:680px){
-      .hero{padding:30px 22px}
-      .section{padding:20px}
-      .blocks{grid-template-columns:1fr}
-      .vocab-grid{grid-template-columns:1fr}
-      .topbar-inner{align-items:flex-start;flex-direction:column}
+      .hero{
+        padding:30px 22px;
+      }
+
+      .section{
+        padding:20px;
+      }
+
+      .blocks{
+        grid-template-columns:1fr;
+      }
+
+      .vocab-grid{
+        grid-template-columns:1fr;
+      }
+
+      .topbar-inner{
+        align-items:flex-start;
+        flex-direction:column;
+      }
     }
   </style>
 </head>
@@ -463,7 +490,7 @@
 
 <header class="topbar">
   <div class="topbar-inner">
-    <div class="brand">General English Listening · Unit 1</div>
+    <div class="brand">General English Listening</div>
     <div class="lang-switch">
       <button class="lang-btn active" onclick="setLang('kz')" id="btnKz">Қазақша</button>
       <button class="lang-btn" onclick="setLang('ru')" id="btnRu">Русский</button>
@@ -476,15 +503,17 @@
   <section class="hero">
     <div class="hero-content">
       <div class="badge">🎧 Listening Practice · A2–B1</div>
+
       <h1>
         <span data-kz="Адам, қоғам және рухани құндылық" data-ru="Человек, общество и духовные ценности">
           Адам, қоғам және рухани құндылық
         </span>
       </h1>
+
       <p class="hero-sub">
-        <span data-kz="Human, society and spiritual values тақырыбы бойынша тыңдалым жаттығулары: аудио, тест, транскрипт, аударма және сөздік."
-              data-ru="Listening-практика по теме Human, society and spiritual values: аудио, тест, транскрипт, перевод и словарь.">
-          Human, society and spiritual values тақырыбы бойынша тыңдалым жаттығулары: аудио, тест, транскрипт, аударма және сөздік.
+        <span data-kz="Human, society and spiritual values тақырыбы бойынша тыңдалым жаттығулары."
+              data-ru="Listening-практика по теме Human, society and spiritual values.">
+          Human, society and spiritual values тақырыбы бойынша тыңдалым жаттығулары.
         </span>
       </p>
     </div>
@@ -492,7 +521,8 @@
 
   <div class="unit-title">
     <h2 data-kz="Unit 1 бөлімдері" data-ru="Разделы Unit 1">Unit 1 бөлімдері</h2>
-    <p data-kz="Төмендегі блокты басып, қажетті тақырыпқа өтіңіз." data-ru="Нажмите на блок, чтобы перейти к нужной теме.">
+    <p data-kz="Төмендегі блокты басып, қажетті тақырыпқа өтіңіз."
+       data-ru="Нажмите на блок, чтобы перейти к нужной теме.">
       Төмендегі блокты басып, қажетті тақырыпқа өтіңіз.
     </p>
   </div>
@@ -504,9 +534,9 @@
         <h3 data-kz="Мен және менің достарым. Менің үйім" data-ru="Я и мои друзья. Мой дом">
           Мен және менің достарым. Менің үйім
         </h3>
-        <p data-kz="Танысу, достар, студенттік орта, үй, бөлме және тұратын жер."
-           data-ru="Знакомство, друзья, студенческая среда, дом, комната и место проживания.">
-          Танысу, достар, студенттік орта, үй, бөлме және тұратын жер.
+        <p data-kz="Танысу, достар, студенттік орта, үй және тұратын жер."
+           data-ru="Знакомство, друзья, студенческая среда, дом и место проживания.">
+          Танысу, достар, студенттік орта, үй және тұратын жер.
         </p>
       </div>
     </a>
@@ -565,16 +595,17 @@
   </section>
 
   <section class="section" id="subunit1">
-    <h2 data-kz="Subunit 1. Мен және менің достарым. Менің үйім" data-ru="Subunit 1. Я и мои друзья. Мой дом">
+    <h2 data-kz="Subunit 1. Мен және менің достарым. Менің үйім"
+        data-ru="Subunit 1. Я и мои друзья. Мой дом">
       Subunit 1. Мен және менің достарым. Менің үйім
     </h2>
+
     <p class="section-desc"
-       data-kz="Бұл бөлімде екі шағын тақырып бар: достармен танысу және үй туралы әңгімелеу."
-       data-ru="В этом разделе две маленькие темы: знакомство с друзьями и разговор о доме.">
-      Бұл бөлімде екі шағын тақырып бар: достармен танысу және үй туралы әңгімелеу.
+       data-kz="Танысу және үй туралы тыңдалым тапсырмалары."
+       data-ru="Listening-задания о знакомстве и доме.">
+      Танысу және үй туралы тыңдалым тапсырмалары.
     </p>
 
-    <!-- LISTENING 1 -->
     <article class="listening-card" id="listening1">
       <h3>Listening 1.1 — Meeting other students</h3>
 
@@ -589,7 +620,6 @@
         <audio controls preload="metadata">
           <source src="./C1.m4a" type="audio/mp4">
           <source src="./C1.m4a" type="audio/x-m4a">
-          Сіздің браузеріңіз аудионы қолдамайды.
         </audio>
 
         <div class="audio-actions">
@@ -597,12 +627,6 @@
           <button class="small-btn" onclick="stopSpeech()">⏹ Stop</button>
           <a class="small-btn" href="./C1.m4a" target="_blank">Open audio</a>
         </div>
-
-        <p class="audio-hint"
-           data-kz="Егер аудио қосылмаса, файл атауын тексеріңіз: C1.m4a атауы кодтағы атаумен бірдей болуы керек."
-           data-ru="Если аудио не включается, проверьте имя файла: C1.m4a должно полностью совпадать с названием в коде.">
-          Егер аудио қосылмаса, файл атауын тексеріңіз: C1.m4a атауы кодтағы атаумен бірдей болуы керек.
-        </p>
       </div>
 
       <div id="l1-speech" class="hidden-speech">
@@ -631,7 +655,9 @@
       <div class="tabs">
         <button class="tab-btn active" onclick="openTab(this,'l1-test')">Test</button>
         <button class="tab-btn" onclick="openTab(this,'l1-transcript')">Transcript</button>
-        <button class="tab-btn" onclick="openTab(this,'l1-translation')"><span data-kz="Аударма" data-ru="Перевод">Аударма</span></button>
+        <button class="tab-btn" onclick="openTab(this,'l1-translation')">
+          <span data-kz="Аударма" data-ru="Перевод">Аударма</span>
+        </button>
         <button class="tab-btn" onclick="openTab(this,'l1-vocab')">Vocabulary</button>
       </div>
 
@@ -799,7 +825,6 @@
       </div>
     </article>
 
-    <!-- LISTENING 2 -->
     <article class="listening-card" id="listening2">
       <h3>Listening 1.2 — My new flat</h3>
 
@@ -814,7 +839,6 @@
         <audio controls preload="metadata">
           <source src="./C2.m4a" type="audio/mp4">
           <source src="./C2.m4a" type="audio/x-m4a">
-          Сіздің браузеріңіз аудионы қолдамайды.
         </audio>
 
         <div class="audio-actions">
@@ -822,12 +846,6 @@
           <button class="small-btn" onclick="stopSpeech()">⏹ Stop</button>
           <a class="small-btn" href="./C2.m4a" target="_blank">Open audio</a>
         </div>
-
-        <p class="audio-hint"
-           data-kz="Егер C2.m4a файлы әлі жүктелмесе, Browser voice батырмасын қолдануға болады."
-           data-ru="Если файл C2.m4a ещё не загружен, можно использовать кнопку Browser voice.">
-          Егер C2.m4a файлы әлі жүктелмесе, Browser voice батырмасын қолдануға болады.
-        </p>
       </div>
 
       <div id="l2-speech" class="hidden-speech">
@@ -851,7 +869,9 @@
       <div class="tabs">
         <button class="tab-btn active" onclick="openTab(this,'l2-test')">Test</button>
         <button class="tab-btn" onclick="openTab(this,'l2-transcript')">Transcript</button>
-        <button class="tab-btn" onclick="openTab(this,'l2-translation')"><span data-kz="Аударма" data-ru="Перевод">Аударма</span></button>
+        <button class="tab-btn" onclick="openTab(this,'l2-translation')">
+          <span data-kz="Аударма" data-ru="Перевод">Аударма</span>
+        </button>
         <button class="tab-btn" onclick="openTab(this,'l2-vocab')">Vocabulary</button>
       </div>
 
@@ -1004,159 +1024,3 @@
       </div>
     </article>
   </section>
-
-  <section class="section" id="subunit2">
-    <h2 data-kz="Subunit 2. Неке және отбасы. Отбасы құндылықтары" data-ru="Subunit 2. Брак и семья. Семейные ценности">
-      Subunit 2. Неке және отбасы. Отбасы құндылықтары
-    </h2>
-    <div class="placeholder"
-         data-kz="Келесі кодта осы жерге 3 listening қосылады: Marriage and family, Family values, Family upbringing."
-         data-ru="В следующем коде сюда будут добавлены 3 listening: Marriage and family, Family values, Family upbringing.">
-      Келесі кодта осы жерге 3 listening қосылады: Marriage and family, Family values, Family upbringing.
-    </div>
-  </section>
-
-  <section class="section" id="subunit3">
-    <h2 data-kz="Subunit 3. Мамандық. Жұмыс. Әріптестер" data-ru="Subunit 3. Профессия. Работа. Коллеги">
-      Subunit 3. Мамандық. Жұмыс. Әріптестер
-    </h2>
-    <div class="placeholder" data-kz="Бұл бөлім кейін толықтырылады." data-ru="Этот раздел будет заполнен позже.">Бұл бөлім кейін толықтырылады.</div>
-  </section>
-
-  <section class="section" id="subunit4">
-    <h2 data-kz="Subunit 4. Саяхат. Бос уақыт. Қызығушылық" data-ru="Subunit 4. Путешествия. Свободное время. Интересы">
-      Subunit 4. Саяхат. Бос уақыт. Қызығушылық
-    </h2>
-    <div class="placeholder" data-kz="Бұл бөлім кейін толықтырылады." data-ru="Этот раздел будет заполнен позже.">Бұл бөлім кейін толықтырылады.</div>
-  </section>
-
-  <section class="section" id="subunit5">
-    <h2 data-kz="Subunit 5. Салауатты өмір салты" data-ru="Subunit 5. Здоровый образ жизни">
-      Subunit 5. Салауатты өмір салты
-    </h2>
-    <div class="placeholder" data-kz="Бұл бөлім кейін толықтырылады." data-ru="Этот раздел будет заполнен позже.">Бұл бөлім кейін толықтырылады.</div>
-  </section>
-
-  <footer>
-    © Назерке. Барлық құқық қорғалған. Материалды рұқсатсыз көшіруге, сатуға, қайта таратуға немесе коммерциялық мақсатта қолдануға болмайды.
-  </footer>
-</main>
-
-<script>
-  let currentLang = "kz";
-  let voices = [];
-
-  function loadVoices(){
-    voices = window.speechSynthesis ? speechSynthesis.getVoices() : [];
-  }
-
-  if ("speechSynthesis" in window) {
-    loadVoices();
-    speechSynthesis.onvoiceschanged = loadVoices;
-  }
-
-  function setLang(lang){
-    currentLang = lang;
-
-    document.documentElement.lang = lang === "kz" ? "kk" : "ru";
-
-    document.getElementById("btnKz").classList.toggle("active", lang === "kz");
-    document.getElementById("btnRu").classList.toggle("active", lang === "ru");
-
-    document.querySelectorAll("[data-kz][data-ru]").forEach(el => {
-      el.innerHTML = el.dataset[lang];
-    });
-
-    document.querySelectorAll(".lang-kz").forEach(el => {
-      el.style.display = lang === "kz" ? "" : "none";
-    });
-
-    document.querySelectorAll(".lang-ru").forEach(el => {
-      el.style.display = lang === "ru" ? "" : "none";
-    });
-  }
-
-  function openTab(button, tabId){
-    const card = button.closest(".listening-card");
-
-    card.querySelectorAll(".tab-btn").forEach(btn => btn.classList.remove("active"));
-    card.querySelectorAll(".tab-content").forEach(content => content.classList.remove("active"));
-
-    button.classList.add("active");
-    document.getElementById(tabId).classList.add("active");
-  }
-
-  function checkBlock(blockId){
-    const block = document.getElementById(blockId + "-test");
-    const questions = block.querySelectorAll(".question");
-    let score = 0;
-
-    questions.forEach((q) => {
-      q.classList.remove("correct", "wrong");
-      q.classList.add("checked");
-
-      const answer = q.dataset.answer;
-      const selected = q.querySelector("input[type='radio']:checked");
-
-      if(selected && selected.value === answer){
-        score++;
-        q.classList.add("correct");
-      } else {
-        q.classList.add("wrong");
-      }
-    });
-
-    const result = document.getElementById(blockId + "Result");
-    result.classList.add("show");
-
-    if(currentLang === "kz"){
-      result.innerHTML = `Нәтиже: ${score}/${questions.length}. ${score === questions.length ? "Керемет!" : "Қателерді қарап, түсіндірмені оқыңыз."}`;
-    } else {
-      result.innerHTML = `Результат: ${score}/${questions.length}. ${score === questions.length ? "Отлично!" : "Посмотрите ошибки и прочитайте объяснения."}`;
-    }
-  }
-
-  function speakText(id){
-    if(!("speechSynthesis" in window)){
-      alert(currentLang === "kz" ? "Бұл браузер мәтінді оқуды қолдамайды." : "Этот браузер не поддерживает озвучивание текста.");
-      return;
-    }
-
-    stopSpeech();
-
-    const textElement = document.getElementById(id);
-    if(!textElement) return;
-
-    const text = textElement.innerText.replace(/\s+/g, " ").trim();
-    const utterance = new SpeechSynthesisUtterance(text);
-
-    loadVoices();
-
-    const britishVoice =
-      voices.find(v => v.lang === "en-GB") ||
-      voices.find(v => v.lang && v.lang.toLowerCase().startsWith("en-gb")) ||
-      voices.find(v => v.name && v.name.toLowerCase().includes("english")) ||
-      voices.find(v => v.lang && v.lang.toLowerCase().startsWith("en"));
-
-    if(britishVoice){
-      utterance.voice = britishVoice;
-    }
-
-    utterance.lang = "en-GB";
-    utterance.rate = 0.86;
-    utterance.pitch = 1;
-
-    speechSynthesis.speak(utterance);
-  }
-
-  function stopSpeech(){
-    if("speechSynthesis" in window){
-      speechSynthesis.cancel();
-    }
-  }
-
-  setLang("kz");
-</script>
-
-</body>
-</html>
