@@ -15,17 +15,13 @@
       --main2:#8b5cf6;
       --soft:#eef0ff;
       --border:#e3e6f2;
-      --ok:#0f9f6e;
-      --bad:#d64545;
       --shadow:0 18px 45px rgba(23,32,51,.10);
       --radius:24px;
     }
 
     *{box-sizing:border-box}
 
-    html{
-      scroll-behavior:smooth;
-    }
+    html{scroll-behavior:smooth}
 
     body{
       margin:0;
@@ -40,7 +36,7 @@
       top:0;
       z-index:100;
       backdrop-filter:blur(18px);
-      background:rgba(255,255,255,.88);
+      background:rgba(255,255,255,.9);
       border-bottom:1px solid rgba(227,230,242,.9);
     }
 
@@ -91,7 +87,7 @@
     }
 
     .hero{
-      min-height:340px;
+      min-height:330px;
       border-radius:34px;
       padding:44px;
       color:white;
@@ -135,9 +131,7 @@
       color:rgba(255,255,255,.92);
     }
 
-    .unit-title{
-      margin:42px 0 16px;
-    }
+    .unit-title{margin:42px 0 16px}
 
     .unit-title h2{
       margin:0;
@@ -280,9 +274,7 @@
       gap:6px;
     }
 
-    .small-btn:hover{
-      background:var(--soft);
-    }
+    .small-btn:hover{background:var(--soft)}
 
     .tabs{
       display:flex;
@@ -310,13 +302,8 @@
       color:#fff;
     }
 
-    .tab-content{
-      display:none;
-    }
-
-    .tab-content.active{
-      display:block;
-    }
+    .tab-content{display:none}
+    .tab-content.active{display:block}
 
     .transcript{
       background:#f8f9ff;
@@ -327,9 +314,7 @@
       font-size:14px;
     }
 
-    .transcript p{
-      margin:5px 0;
-    }
+    .transcript p{margin:5px 0}
 
     .speaker{
       font-weight:900;
@@ -345,9 +330,7 @@
       font-size:14px;
     }
 
-    .translation p{
-      margin:5px 0;
-    }
+    .translation p{margin:5px 0}
 
     .vocab-grid{
       display:grid;
@@ -392,13 +375,8 @@
       transition:.15s;
     }
 
-    .option:hover{
-      background:#f8f9ff;
-    }
-
-    .option input{
-      margin-right:8px;
-    }
+    .option:hover{background:#f8f9ff}
+    .option input{margin-right:8px}
 
     .explain{
       display:none;
@@ -410,19 +388,9 @@
       color:#33415f;
     }
 
-    .question.checked .explain{
-      display:block;
-    }
-
-    .question.correct{
-      border-color:rgba(15,159,110,.45);
-      background:#f4fffb;
-    }
-
-    .question.wrong{
-      border-color:rgba(214,69,69,.42);
-      background:#fff6f6;
-    }
+    .question.checked .explain{display:block}
+    .question.correct{border-color:rgba(15,159,110,.45);background:#f4fffb}
+    .question.wrong{border-color:rgba(214,69,69,.42);background:#fff6f6}
 
     .result{
       display:none;
@@ -451,37 +419,18 @@
       margin-top:12px;
     }
 
-    .hidden-speech{
-      display:none;
-    }
+    .hidden-speech{display:none}
 
     @media(max-width:1050px){
-      .blocks{
-        grid-template-columns:repeat(2,1fr);
-      }
+      .blocks{grid-template-columns:repeat(2,1fr)}
     }
 
     @media(max-width:680px){
-      .hero{
-        padding:30px 22px;
-      }
-
-      .section{
-        padding:20px;
-      }
-
-      .blocks{
-        grid-template-columns:1fr;
-      }
-
-      .vocab-grid{
-        grid-template-columns:1fr;
-      }
-
-      .topbar-inner{
-        align-items:flex-start;
-        flex-direction:column;
-      }
+      .hero{padding:30px 22px}
+      .section{padding:20px}
+      .blocks{grid-template-columns:1fr}
+      .vocab-grid{grid-template-columns:1fr}
+      .topbar-inner{align-items:flex-start;flex-direction:column}
     }
   </style>
 </head>
@@ -618,14 +567,15 @@
 
       <div class="audio-box">
         <audio controls preload="metadata">
-          <source src="./C1.m4a" type="audio/mp4">
-          <source src="./C1.m4a" type="audio/x-m4a">
+          <source src="C1.m4a" type="audio/mp4">
+          <source src="C1.m4a" type="audio/x-m4a">
+          Your browser does not support the audio element.
         </audio>
 
         <div class="audio-actions">
           <button class="small-btn" onclick="speakText('l1-speech')">🔊 Browser voice</button>
           <button class="small-btn" onclick="stopSpeech()">⏹ Stop</button>
-          <a class="small-btn" href="./C1.m4a" target="_blank">Open audio</a>
+          <a class="small-btn" href="C1.m4a" target="_blank">Open audio</a>
         </div>
       </div>
 
@@ -821,205 +771,6 @@
           <div class="vocab-item"><b>grew up</b><span class="lang-kz">өсіп-жетті</span><span class="lang-ru" style="display:none">вырос / выросла</span></div>
           <div class="vocab-item"><b>on its own</b><span class="lang-kz">жеке өзі, бөлек</span><span class="lang-ru" style="display:none">отдельно, само по себе</span></div>
           <div class="vocab-item"><b>decide between</b><span class="lang-kz">екеуінің бірін таңдау</span><span class="lang-ru" style="display:none">выбирать между</span></div>
-        </div>
-      </div>
-    </article>
-
-    <article class="listening-card" id="listening2">
-      <h3>Listening 1.2 — My new flat</h3>
-
-      <div class="listen-meta">
-        <span class="pill">Topic: My home</span>
-        <span class="pill">Level: A2–B1</span>
-        <span class="pill">Type: Dialogue</span>
-        <span class="pill">Audio: C2.m4a</span>
-      </div>
-
-      <div class="audio-box">
-        <audio controls preload="metadata">
-          <source src="./C2.m4a" type="audio/mp4">
-          <source src="./C2.m4a" type="audio/x-m4a">
-        </audio>
-
-        <div class="audio-actions">
-          <button class="small-btn" onclick="speakText('l2-speech')">🔊 Browser voice</button>
-          <button class="small-btn" onclick="stopSpeech()">⏹ Stop</button>
-          <a class="small-btn" href="./C2.m4a" target="_blank">Open audio</a>
-        </div>
-      </div>
-
-      <div id="l2-speech" class="hidden-speech">
-        Anna: Hi, Tom. Come in. This is my new flat.
-        Tom: Thanks, Anna. It looks very bright. Do you live here alone?
-        Anna: No, I share it with my cousin. It isn’t very big, but it’s comfortable.
-        Tom: How many rooms are there?
-        Anna: There are two bedrooms, a small living room, a kitchen and one bathroom. My bedroom is on the left. It has a desk, a bed and a wardrobe.
-        Tom: That sounds nice. Is it close to the university?
-        Anna: Yes, it takes about fifteen minutes by bus. There is also a small shop and a bus stop near the building.
-        Tom: What do you like most about the flat?
-        Anna: I like the living room. It has a big window, so there is a lot of light. In the evening, we sit there, drink tea and talk about our day.
-        Tom: Do you have a balcony?
-        Anna: Yes, but it’s tiny. We keep two plants there. In summer, I sometimes read on the balcony.
-        Tom: Is there anything you don’t like?
-        Anna: The kitchen is quite small, and the neighbours upstairs are sometimes noisy. But I still like this place because it feels like home.
-        Tom: I understand. A home doesn’t have to be perfect. It just needs to be warm and peaceful.
-        Anna: Exactly. For me, home is a place where I can rest, study and feel safe.
-      </div>
-
-      <div class="tabs">
-        <button class="tab-btn active" onclick="openTab(this,'l2-test')">Test</button>
-        <button class="tab-btn" onclick="openTab(this,'l2-transcript')">Transcript</button>
-        <button class="tab-btn" onclick="openTab(this,'l2-translation')">
-          <span data-kz="Аударма" data-ru="Перевод">Аударма</span>
-        </button>
-        <button class="tab-btn" onclick="openTab(this,'l2-vocab')">Vocabulary</button>
-      </div>
-
-      <div class="tab-content active" id="l2-test">
-        <div id="l2Result" class="result"></div>
-
-        <div class="question" data-answer="1">
-          <p>1. What is Anna showing Tom?</p>
-          <label class="option"><input type="radio" name="l2q1" value="0"> Her university classroom</label>
-          <label class="option"><input type="radio" name="l2q1" value="1"> Her new flat</label>
-          <label class="option"><input type="radio" name="l2q1" value="2"> Her cousin’s office</label>
-          <label class="option"><input type="radio" name="l2q1" value="3"> A shop near her home</label>
-          <div class="explain">Correct answer: B. Anna says, “This is my new flat.”</div>
-        </div>
-
-        <div class="question" data-answer="2">
-          <p>2. Who does Anna share the flat with?</p>
-          <label class="option"><input type="radio" name="l2q2" value="0"> Her friend Tom</label>
-          <label class="option"><input type="radio" name="l2q2" value="1"> Her parents</label>
-          <label class="option"><input type="radio" name="l2q2" value="2"> Her cousin</label>
-          <label class="option"><input type="radio" name="l2q2" value="3"> Her teacher</label>
-          <div class="explain">Correct answer: C. Anna says she shares the flat with her cousin.</div>
-        </div>
-
-        <div class="question" data-answer="0">
-          <p>3. How many bedrooms are there in the flat?</p>
-          <label class="option"><input type="radio" name="l2q3" value="0"> Two</label>
-          <label class="option"><input type="radio" name="l2q3" value="1"> Three</label>
-          <label class="option"><input type="radio" name="l2q3" value="2"> One</label>
-          <label class="option"><input type="radio" name="l2q3" value="3"> Four</label>
-          <div class="explain">Correct answer: A. Anna says there are two bedrooms.</div>
-        </div>
-
-        <div class="question" data-answer="3">
-          <p>4. What is in Anna’s bedroom?</p>
-          <label class="option"><input type="radio" name="l2q4" value="0"> A sofa, a TV and a plant</label>
-          <label class="option"><input type="radio" name="l2q4" value="1"> A table, a mirror and a balcony</label>
-          <label class="option"><input type="radio" name="l2q4" value="2"> A piano, a chair and a shelf</label>
-          <label class="option"><input type="radio" name="l2q4" value="3"> A desk, a bed and a wardrobe</label>
-          <div class="explain">Correct answer: D. Anna says her bedroom has a desk, a bed and a wardrobe.</div>
-        </div>
-
-        <div class="question" data-answer="1">
-          <p>5. How long does it take to get to the university by bus?</p>
-          <label class="option"><input type="radio" name="l2q5" value="0"> About five minutes</label>
-          <label class="option"><input type="radio" name="l2q5" value="1"> About fifteen minutes</label>
-          <label class="option"><input type="radio" name="l2q5" value="2"> About thirty minutes</label>
-          <label class="option"><input type="radio" name="l2q5" value="3"> About forty-five minutes</label>
-          <div class="explain">Correct answer: B. Anna says it takes about fifteen minutes by bus.</div>
-        </div>
-
-        <div class="question" data-answer="0">
-          <p>6. What does Anna like most about the flat?</p>
-          <label class="option"><input type="radio" name="l2q6" value="0"> The living room</label>
-          <label class="option"><input type="radio" name="l2q6" value="1"> The kitchen</label>
-          <label class="option"><input type="radio" name="l2q6" value="2"> The bathroom</label>
-          <label class="option"><input type="radio" name="l2q6" value="3"> The building entrance</label>
-          <div class="explain">Correct answer: A. Anna says she likes the living room because it has a big window and a lot of light.</div>
-        </div>
-
-        <div class="question" data-answer="2">
-          <p>7. What does Anna sometimes do on the balcony in summer?</p>
-          <label class="option"><input type="radio" name="l2q7" value="0"> She cooks dinner</label>
-          <label class="option"><input type="radio" name="l2q7" value="1"> She studies with Tom</label>
-          <label class="option"><input type="radio" name="l2q7" value="2"> She reads</label>
-          <label class="option"><input type="radio" name="l2q7" value="3"> She waters a tree</label>
-          <div class="explain">Correct answer: C. Anna says she sometimes reads on the balcony in summer.</div>
-        </div>
-
-        <div class="question" data-answer="3">
-          <p>8. What is the main idea of the conversation?</p>
-          <label class="option"><input type="radio" name="l2q8" value="0"> Anna wants to sell her flat</label>
-          <label class="option"><input type="radio" name="l2q8" value="1"> Tom is looking for a new university</label>
-          <label class="option"><input type="radio" name="l2q8" value="2"> Anna complains about public transport</label>
-          <label class="option"><input type="radio" name="l2q8" value="3"> Anna describes her home and why she likes it</label>
-          <div class="explain">Correct answer: D. The conversation is mainly about Anna’s flat, its rooms, location and why it feels like home.</div>
-        </div>
-
-        <button class="check-btn" onclick="checkBlock('l2')">Тестті тексеру</button>
-      </div>
-
-      <div class="tab-content" id="l2-transcript">
-        <div class="transcript">
-          <p><span class="speaker">Anna:</span> Hi, Tom. Come in. This is my new flat.</p>
-          <p><span class="speaker">Tom:</span> Thanks, Anna. It looks very bright. Do you live here alone?</p>
-          <p><span class="speaker">Anna:</span> No, I share it with my cousin. It isn’t very big, but it’s comfortable.</p>
-          <p><span class="speaker">Tom:</span> How many rooms are there?</p>
-          <p><span class="speaker">Anna:</span> There are two bedrooms, a small living room, a kitchen and one bathroom. My bedroom is on the left. It has a desk, a bed and a wardrobe.</p>
-          <p><span class="speaker">Tom:</span> That sounds nice. Is it close to the university?</p>
-          <p><span class="speaker">Anna:</span> Yes, it takes about fifteen minutes by bus. There is also a small shop and a bus stop near the building.</p>
-          <p><span class="speaker">Tom:</span> What do you like most about the flat?</p>
-          <p><span class="speaker">Anna:</span> I like the living room. It has a big window, so there is a lot of light. In the evening, we sit there, drink tea and talk about our day.</p>
-          <p><span class="speaker">Tom:</span> Do you have a balcony?</p>
-          <p><span class="speaker">Anna:</span> Yes, but it’s tiny. We keep two plants there. In summer, I sometimes read on the balcony.</p>
-          <p><span class="speaker">Tom:</span> Is there anything you don’t like?</p>
-          <p><span class="speaker">Anna:</span> The kitchen is quite small, and the neighbours upstairs are sometimes noisy. But I still like this place because it feels like home.</p>
-          <p><span class="speaker">Tom:</span> I understand. A home doesn’t have to be perfect. It just needs to be warm and peaceful.</p>
-          <p><span class="speaker">Anna:</span> Exactly. For me, home is a place where I can rest, study and feel safe.</p>
-        </div>
-      </div>
-
-      <div class="tab-content" id="l2-translation">
-        <div class="translation lang-kz">
-          <p><span class="speaker">Anna:</span> Сәлем, Том. Кір. Бұл менің жаңа пәтерім.</p>
-          <p><span class="speaker">Tom:</span> Рақмет, Анна. Ол өте жарық көрінеді. Сен мұнда жалғыз тұрасың ба?</p>
-          <p><span class="speaker">Anna:</span> Жоқ, мен оны немере туысыммен бірге бөлісемін. Ол өте үлкен емес, бірақ жайлы.</p>
-          <p><span class="speaker">Tom:</span> Мұнда қанша бөлме бар?</p>
-          <p><span class="speaker">Anna:</span> Екі жатын бөлме, шағын қонақ бөлме, асүй және бір жуынатын бөлме бар. Менің жатын бөлмем сол жақта. Онда үстел, төсек және киім шкафы бар.</p>
-          <p><span class="speaker">Tom:</span> Жақсы сияқты. Ол университетке жақын ба?</p>
-          <p><span class="speaker">Anna:</span> Иә, автобуспен шамамен он бес минут кетеді. Ғимараттың жанында шағын дүкен және автобус аялдамасы да бар.</p>
-          <p><span class="speaker">Tom:</span> Пәтердің несі саған ең қатты ұнайды?</p>
-          <p><span class="speaker">Anna:</span> Маған қонақ бөлме ұнайды. Онда үлкен терезе бар, сондықтан жарық көп. Кешке біз сонда отырып, шай ішеміз және күніміз туралы сөйлесеміз.</p>
-          <p><span class="speaker">Tom:</span> Сендерде балкон бар ма?</p>
-          <p><span class="speaker">Anna:</span> Иә, бірақ ол өте кішкентай. Біз онда екі өсімдік ұстаймыз. Жазда мен кейде балконда кітап оқимын.</p>
-          <p><span class="speaker">Tom:</span> Саған ұнамайтын нәрсе бар ма?</p>
-          <p><span class="speaker">Anna:</span> Асүй өте кішкентай, ал жоғарыдағы көршілер кейде шу шығарады. Бірақ мен бұл жерді бәрібір ұнатамын, өйткені ол үй сияқты сезіледі.</p>
-          <p><span class="speaker">Tom:</span> Түсінемін. Үй мінсіз болуы міндетті емес. Ол жай ғана жылы және тыныш болуы керек.</p>
-          <p><span class="speaker">Anna:</span> Дәл солай. Мен үшін үй — демалатын, оқитын және өзімді қауіпсіз сезінетін жер.</p>
-        </div>
-
-        <div class="translation lang-ru" style="display:none">
-          <p><span class="speaker">Anna:</span> Привет, Том. Заходи. Это моя новая квартира.</p>
-          <p><span class="speaker">Tom:</span> Спасибо, Анна. Она выглядит очень светлой. Ты живёшь здесь одна?</p>
-          <p><span class="speaker">Anna:</span> Нет, я делю её со своей кузиной. Она не очень большая, но удобная.</p>
-          <p><span class="speaker">Tom:</span> Сколько здесь комнат?</p>
-          <p><span class="speaker">Anna:</span> Здесь две спальни, небольшая гостиная, кухня и одна ванная комната. Моя спальня слева. В ней есть письменный стол, кровать и шкаф.</p>
-          <p><span class="speaker">Tom:</span> Звучит хорошо. Она близко к университету?</p>
-          <p><span class="speaker">Anna:</span> Да, на автобусе это занимает около пятнадцати минут. Рядом со зданием также есть маленький магазин и автобусная остановка.</p>
-          <p><span class="speaker">Tom:</span> Что тебе больше всего нравится в квартире?</p>
-          <p><span class="speaker">Anna:</span> Мне нравится гостиная. В ней большое окно, поэтому там много света. Вечером мы сидим там, пьём чай и говорим о нашем дне.</p>
-          <p><span class="speaker">Tom:</span> У вас есть балкон?</p>
-          <p><span class="speaker">Anna:</span> Да, но он крошечный. Мы держим там два растения. Летом я иногда читаю на балконе.</p>
-          <p><span class="speaker">Tom:</span> Есть что-то, что тебе не нравится?</p>
-          <p><span class="speaker">Anna:</span> Кухня довольно маленькая, а соседи сверху иногда шумные. Но мне всё равно нравится это место, потому что оно ощущается как дом.</p>
-          <p><span class="speaker">Tom:</span> Я понимаю. Дом не должен быть идеальным. Он просто должен быть тёплым и спокойным.</p>
-          <p><span class="speaker">Anna:</span> Именно. Для меня дом — это место, где я могу отдыхать, учиться и чувствовать себя в безопасности.</p>
-        </div>
-      </div>
-
-      <div class="tab-content" id="l2-vocab">
-        <div class="vocab-grid">
-          <div class="vocab-item"><b>flat</b><span class="lang-kz">пәтер</span><span class="lang-ru" style="display:none">квартира</span></div>
-          <div class="vocab-item"><b>share</b><span class="lang-kz">бірге тұру, бөлісу</span><span class="lang-ru" style="display:none">делить, жить вместе</span></div>
-          <div class="vocab-item"><b>comfortable</b><span class="lang-kz">ыңғайлы, жайлы</span><span class="lang-ru" style="display:none">удобный, уютный</span></div>
-          <div class="vocab-item"><b>wardrobe</b><span class="lang-kz">киім шкафы</span><span class="lang-ru" style="display:none">шкаф для одежды</span></div>
-          <div class="vocab-item"><b>bus stop</b><span class="lang-kz">автобус аялдамасы</span><span class="lang-ru" style="display:none">автобусная остановка</span></div>
-          <div class="vocab-item"><b>neighbours</b><span class="lang-kz">көршілер</span><span class="lang-ru" style="display:none">соседи</span></div>
-          <div class="vocab-item"><b>feel safe</b><span class="lang-kz">өзін қауіпсіз сезіну</span><span class="lang-ru" style="display:none">чувствовать себя в безопасности</span></div>
         </div>
       </div>
     </article>
