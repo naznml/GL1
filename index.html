@@ -19,7 +19,6 @@
     }
 
     *{box-sizing:border-box}
-
     html{scroll-behavior:smooth}
 
     body{
@@ -383,13 +382,6 @@
       font-weight:900;
       cursor:pointer;
       margin-top:12px;
-    }
-
-    footer{
-      margin-top:50px;
-      color:var(--muted);
-      text-align:center;
-      font-size:14px;
     }
 
     @media(max-width:1050px){
@@ -881,88 +873,3 @@
       </div>
     </article>
   </section>
-
-  <footer>
-    © Назерке. Барлық құқық қорғалған. Материалды рұқсатсыз көшіруге, сатуға, қайта таратуға немесе коммерциялық мақсатта қолдануға болмайды.
-  </footer>
-</main>
-
-<script>
-  let currentLang = "kz";
-
-  function setLang(lang){
-    currentLang = lang;
-
-    const btnKz = document.getElementById("btnKz");
-    const btnRu = document.getElementById("btnRu");
-
-    if(btnKz && btnRu){
-      btnKz.classList.toggle("active", lang === "kz");
-      btnRu.classList.toggle("active", lang === "ru");
-    }
-
-    document.querySelectorAll("[data-kz][data-ru]").forEach(el => {
-      el.innerHTML = el.dataset[lang];
-    });
-
-    document.querySelectorAll(".lang-kz").forEach(el => {
-      el.style.display = lang === "kz" ? "" : "none";
-    });
-
-    document.querySelectorAll(".lang-ru").forEach(el => {
-      el.style.display = lang === "ru" ? "" : "none";
-    });
-  }
-
-  function openTab(button, tabId){
-    const card = button.closest(".listening-card");
-    if(!card) return;
-
-    card.querySelectorAll(".tab-btn").forEach(btn => btn.classList.remove("active"));
-    card.querySelectorAll(".tab-content").forEach(content => content.classList.remove("active"));
-
-    button.classList.add("active");
-
-    const tab = document.getElementById(tabId);
-    if(tab) tab.classList.add("active");
-  }
-
-  function checkBlock(blockId){
-    const block = document.getElementById(blockId + "-test");
-    if(!block) return;
-
-    const questions = block.querySelectorAll(".question");
-    let score = 0;
-
-    questions.forEach((q) => {
-      q.classList.remove("correct", "wrong");
-      q.classList.add("checked");
-
-      const answer = q.dataset.answer;
-      const selected = q.querySelector("input[type='radio']:checked");
-
-      if(selected && selected.value === answer){
-        score++;
-        q.classList.add("correct");
-      } else {
-        q.classList.add("wrong");
-      }
-    });
-
-    const result = document.getElementById(blockId + "Result");
-
-    if(result){
-      result.classList.add("show");
-
-      if(currentLang === "kz"){
-        result.innerHTML = `Нәтиже: ${score}/${questions.length}. ${score === questions.length ? "Керемет!" : "Қателерді қарап, түсіндірмені оқыңыз."}`;
-      } else {
-        result.innerHTML = `Результат: ${score}/${questions.length}. ${score === questions.length ? "Отлично!" : "Посмотрите ошибки и прочитайте объяснения."}`;
-      }
-    }
-  }
-
-  setLang("kz");
-</script>
-</body>
-</html>
