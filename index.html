@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>General English Listening</title>
-
   <style>
     :root{
       --card:#ffffff;
@@ -17,10 +16,8 @@
       --shadow:0 18px 45px rgba(23,32,51,.10);
       --radius:24px;
     }
-
     *{box-sizing:border-box}
     html{scroll-behavior:smooth}
-
     body{
       margin:0;
       font-family:Inter, Arial, sans-serif;
@@ -28,7 +25,6 @@
       color:var(--text);
       line-height:1.5;
     }
-
     .topbar{
       position:sticky;
       top:0;
@@ -37,7 +33,6 @@
       background:rgba(255,255,255,.9);
       border-bottom:1px solid var(--border);
     }
-
     .topbar-inner{
       max-width:1180px;
       margin:0 auto;
@@ -47,12 +42,10 @@
       justify-content:space-between;
       gap:14px;
     }
-
     .brand{
       font-weight:900;
       color:var(--main);
     }
-
     .lang-switch{
       display:flex;
       gap:8px;
@@ -60,7 +53,6 @@
       padding:5px;
       border-radius:999px;
     }
-
     .lang-btn{
       border:0;
       padding:9px 16px;
@@ -70,19 +62,16 @@
       color:var(--muted);
       background:transparent;
     }
-
     .lang-btn.active{
       background:#fff;
       color:var(--main);
       box-shadow:0 6px 16px rgba(91,95,240,.14);
     }
-
     .container{
       max-width:1180px;
       margin:0 auto;
       padding:28px 18px 70px;
     }
-
     .hero{
       min-height:330px;
       border-radius:34px;
@@ -95,7 +84,6 @@
       background-position:center;
       box-shadow:var(--shadow);
     }
-
     .badge{
       display:inline-flex;
       background:rgba(255,255,255,.16);
@@ -105,42 +93,35 @@
       font-weight:800;
       margin-bottom:18px;
     }
-
     h1{
       margin:0;
       font-size:clamp(32px,5vw,62px);
       line-height:1.05;
       letter-spacing:-1.8px;
     }
-
     .hero-sub{
       margin:18px 0 0;
       font-size:18px;
       max-width:720px;
       color:rgba(255,255,255,.92);
     }
-
     .unit-title{
       margin:42px 0 16px;
     }
-
     .unit-title h2{
       margin:0;
       font-size:32px;
     }
-
     .unit-title p{
       margin:6px 0 0;
       color:var(--muted);
     }
-
     .blocks{
       display:grid;
       grid-template-columns:repeat(5,1fr);
       gap:16px;
       margin:22px 0 48px;
     }
-
     .block-card{
       min-height:210px;
       padding:22px;
@@ -152,13 +133,11 @@
       color:var(--text);
       transition:.22s ease;
     }
-
     .block-card:hover{
       transform:translateY(-5px);
       box-shadow:var(--shadow);
       border-color:#c8ccff;
     }
-
     .block-num{
       width:42px;
       height:42px;
@@ -170,19 +149,16 @@
       font-weight:900;
       margin-bottom:14px;
     }
-
     .block-card h3{
       margin:0 0 10px;
       font-size:18px;
       line-height:1.25;
     }
-
     .block-card p{
       margin:0;
       color:var(--muted);
       font-size:14px;
     }
-
     .section{
       background:#fff;
       border:1px solid var(--border);
@@ -191,17 +167,14 @@
       margin-bottom:32px;
       box-shadow:0 14px 35px rgba(23,32,51,.07);
     }
-
     .section h2,
     .section h3{
       margin:0;
     }
-
     .section-desc{
       color:var(--muted);
       margin:8px 0 0;
     }
-
     .listening-card{
       border:1px solid var(--border);
       border-radius:28px;
@@ -209,14 +182,12 @@
       margin:22px 0;
       background:linear-gradient(180deg,#fff,#fbfcff);
     }
-
     .listen-meta{
       display:flex;
       flex-wrap:wrap;
       gap:9px;
       margin:12px 0 16px;
     }
-
     .pill{
       padding:7px 12px;
       border-radius:999px;
@@ -225,7 +196,6 @@
       font-size:13px;
       font-weight:900;
     }
-
     .audio-box{
       padding:14px;
       border:1px solid var(--border);
@@ -233,18 +203,15 @@
       background:#f8f9ff;
       margin:14px 0 18px;
     }
-
     audio{
       width:100%;
       margin:4px 0;
     }
-
     .browser-player{
       display:flex;
       align-items:center;
       gap:14px;
     }
-
     .play-circle{
       width:46px;
       height:46px;
@@ -259,21 +226,17 @@
       place-items:center;
       flex-shrink:0;
     }
-
     .player-title{
       font-weight:900;
       color:var(--text);
     }
-
     .player-subtitle{
       font-size:13px;
       color:var(--muted);
     }
-
     .speech-text{
       display:none;
     }
-
     .tabs{
       display:flex;
       gap:8px;
@@ -282,7 +245,6 @@
       border-bottom:1px solid var(--border);
       padding-bottom:12px;
     }
-
     .tab-btn{
       border:1px solid var(--border);
       background:#fff;
@@ -292,16 +254,13 @@
       cursor:pointer;
       font-weight:900;
     }
-
     .tab-btn.active{
       background:var(--main);
       border-color:var(--main);
       color:#fff;
     }
-
     .tab-content{display:none}
     .tab-content.active{display:block}
-
     .transcript{
       background:#f8f9ff;
       border:1px solid var(--border);
@@ -310,7 +269,6 @@
       line-height:1.35;
       font-size:14px;
     }
-
     .translation{
       background:#fffaf2;
       border:1px solid #f0dfbc;
@@ -319,36 +277,30 @@
       line-height:1.35;
       font-size:14px;
     }
-
     .transcript p,
     .translation p{
       margin:5px 0;
     }
-
     .speaker{
       font-weight:900;
       color:var(--main);
     }
-
     .vocab-grid{
       display:grid;
       grid-template-columns:repeat(2,1fr);
       gap:12px;
     }
-
     .vocab-item{
       border:1px solid var(--border);
       background:#fff;
       border-radius:18px;
       padding:15px;
     }
-
     .vocab-item b{
       display:block;
       color:var(--main);
       margin-bottom:5px;
     }
-
     .question{
       border:1px solid var(--border);
       border-radius:20px;
@@ -356,12 +308,10 @@
       margin:14px 0;
       background:#fff;
     }
-
     .question p{
       margin:0 0 12px;
       font-weight:850;
     }
-
     .option{
       display:block;
       padding:10px 12px;
@@ -370,15 +320,12 @@
       border-radius:14px;
       cursor:pointer;
     }
-
     .option:hover{
       background:#f8f9ff;
     }
-
     .option input{
       margin-right:8px;
     }
-
     .explain{
       display:none;
       margin-top:12px;
@@ -388,11 +335,9 @@
       border-radius:12px;
       color:#33415f;
     }
-
     .question.checked .explain{display:block}
     .question.correct{border-color:rgba(15,159,110,.45);background:#f4fffb}
     .question.wrong{border-color:rgba(214,69,69,.42);background:#fff6f6}
-
     .result{
       display:none;
       padding:16px 18px;
@@ -400,14 +345,12 @@
       margin-bottom:18px;
       font-weight:900;
     }
-
     .result.show{
       display:block;
       background:#eef0ff;
       color:var(--main);
       border:1px solid #cfd3ff;
     }
-
     .check-btn{
       border:0;
       background:linear-gradient(135deg,var(--main),var(--main2));
@@ -418,11 +361,9 @@
       cursor:pointer;
       margin-top:12px;
     }
-
     @media(max-width:1050px){
       .blocks{grid-template-columns:repeat(2,1fr)}
     }
-
     @media(max-width:680px){
       .hero{padding:30px 22px}
       .section{padding:20px}
@@ -431,74 +372,56 @@
       .topbar-inner{align-items:flex-start;flex-direction:column}
     }
   </style>
-
   <script>
     let currentLang = "kz";
     let voices = [];
     let currentButton = null;
-
     function loadVoices(){
       if("speechSynthesis" in window){
         voices = speechSynthesis.getVoices();
       }
     }
-
     if("speechSynthesis" in window){
       loadVoices();
       speechSynthesis.onvoiceschanged = loadVoices;
     }
-
     function setLang(lang){
       currentLang = lang;
-
       const btnKz = document.getElementById("btnKz");
       const btnRu = document.getElementById("btnRu");
-
       if(btnKz && btnRu){
         btnKz.classList.toggle("active", lang === "kz");
         btnRu.classList.toggle("active", lang === "ru");
       }
-
       document.querySelectorAll("[data-kz][data-ru]").forEach(el => {
         el.innerHTML = el.dataset[lang];
       });
-
       document.querySelectorAll(".lang-kz").forEach(el => {
         el.style.display = lang === "kz" ? "" : "none";
       });
-
       document.querySelectorAll(".lang-ru").forEach(el => {
         el.style.display = lang === "ru" ? "" : "none";
       });
     }
-
     function openTab(button, tabId){
       const card = button.closest(".listening-card");
       if(!card) return;
-
       card.querySelectorAll(".tab-btn").forEach(btn => btn.classList.remove("active"));
       card.querySelectorAll(".tab-content").forEach(content => content.classList.remove("active"));
-
       button.classList.add("active");
-
       const tab = document.getElementById(tabId);
       if(tab) tab.classList.add("active");
     }
-
     function checkBlock(blockId){
       const block = document.getElementById(blockId + "-test");
       if(!block) return;
-
       const questions = block.querySelectorAll(".question");
       let score = 0;
-
       questions.forEach(q => {
         q.classList.remove("correct", "wrong");
         q.classList.add("checked");
-
         const answer = q.dataset.answer;
         const selected = q.querySelector("input[type='radio']:checked");
-
         if(selected && selected.value === answer){
           score++;
           q.classList.add("correct");
@@ -506,73 +429,57 @@
           q.classList.add("wrong");
         }
       });
-
       const result = document.getElementById(blockId + "Result");
-
       if(result){
         result.classList.add("show");
         result.innerHTML = currentLang === "kz"
           ? `Нәтиже: ${score}/${questions.length}. Төменде әр сұрақтың түсіндірмесін қараңыз.`
-          : `Result: ${score}/${questions.length}. Read the explanation under each question.`;
+          : `Результат: ${score}/${questions.length}. Посмотрите объяснение под каждым вопросом.`;
       }
     }
-
     function toggleBrowserAudio(id, button){
       if(!("speechSynthesis" in window)){
         alert("Browser audio is not supported in this browser.");
         return;
       }
-
       if(speechSynthesis.speaking){
         speechSynthesis.cancel();
         if(currentButton){ currentButton.textContent = "▶"; }
         currentButton = null;
         return;
       }
-
       const el = document.getElementById(id);
       if(!el) return;
-
       const text = el.innerText.replace(/\s+/g, " ").trim();
       const utterance = new SpeechSynthesisUtterance(text);
-
       loadVoices();
-
       const britishVoice =
         voices.find(v => v.lang === "en-GB") ||
         voices.find(v => v.lang && v.lang.toLowerCase().startsWith("en-gb")) ||
         voices.find(v => v.lang && v.lang.toLowerCase().startsWith("en"));
-
       if(britishVoice){
         utterance.voice = britishVoice;
       }
-
       utterance.lang = "en-GB";
       utterance.rate = 0.86;
       utterance.pitch = 1;
-
       currentButton = button;
       button.textContent = "⏸";
-
       utterance.onend = function(){
         button.textContent = "▶";
         currentButton = null;
       };
-
       utterance.onerror = function(){
         button.textContent = "▶";
         currentButton = null;
       };
-
       speechSynthesis.speak(utterance);
     }
-
     document.addEventListener("DOMContentLoaded", function(){
       setLang("kz");
     });
   </script>
 </head>
-
 <body>
 <header class="topbar">
   <div class="topbar-inner">
@@ -583,26 +490,24 @@
     </div>
   </div>
 </header>
-
 <main class="container">
-
   <section class="hero">
     <div class="hero-content">
       <div class="badge">🎧 Listening Practice · A2–B1</div>
       <h1>
-        <span data-kz="Адам, қоғам және рухани құндылық" data-ru="Человек, общество и духовные ценности">
+        <span data-kz="Адам, қоғам және рухани құндылық"
+              data-ru="Человек, общество и духовные ценности">
           Адам, қоғам және рухани құндылық
         </span>
       </h1>
       <p class="hero-sub">
-        <span data-kz="Human, society and spiritual values тақырыбы бойынша тыңдалым жаттығулары."
-              data-ru="Listening-практика по теме Human, society and spiritual values.">
-          Human, society and spiritual values тақырыбы бойынша тыңдалым жаттығулары.
+        <span data-kz="Human, society and spiritual values тақырыбы бойынша магистратураға түсу емтиханына арналған тыңдалым жаттығулары."
+              data-ru="Listening-практика по теме Human, society and spiritual values для подготовки к вступительному экзамену в магистратуру.">
+          Human, society and spiritual values тақырыбы бойынша магистратураға түсу емтиханына арналған тыңдалым жаттығулары.
         </span>
       </p>
     </div>
   </section>
-
   <div class="unit-title">
     <h2 data-kz="Unit 1 бөлімдері" data-ru="Разделы Unit 1">Unit 1 бөлімдері</h2>
     <p data-kz="Төмендегі блокты басып, қажетті тақырыпқа өтіңіз."
@@ -610,12 +515,12 @@
       Төмендегі блокты басып, қажетті тақырыпқа өтіңіз.
     </p>
   </div>
-
   <section class="blocks">
     <a href="#subunit1" class="block-card">
       <div>
         <div class="block-num">1</div>
-        <h3 data-kz="Мен және менің достарым. Менің үйім" data-ru="Я и мои друзья. Мой дом">
+        <h3 data-kz="Мен және менің достарым. Менің үйім"
+            data-ru="Я и мои друзья. Мой дом">
           Мен және менің достарым. Менің үйім
         </h3>
         <p data-kz="Танысу, достар, студенттік орта, үй және тұратын жер."
@@ -624,455 +529,239 @@
         </p>
       </div>
     </a>
-
-    <a href="#subunit2" class="block-card">
-      <div>
-        <div class="block-num">2</div>
-        <h3 data-kz="Неке және отбасы. Отбасы құндылықтары" data-ru="Брак и семья. Семейные ценности">
-          Неке және отбасы. Отбасы құндылықтары
-        </h3>
-        <p data-kz="Неке, отбасы, отбасылық құндылықтар және тәрбие."
-           data-ru="Брак, семья, семейные ценности и воспитание.">
-          Неке, отбасы, отбасылық құндылықтар және тәрбие.
-        </p>
-      </div>
-    </a>
-
-    <a href="#subunit3" class="block-card">
-      <div>
-        <div class="block-num">3</div>
-        <h3 data-kz="Мамандық. Жұмыс. Әріптестер" data-ru="Профессия. Работа. Коллеги">
-          Мамандық. Жұмыс. Әріптестер
-        </h3>
-        <p data-kz="Кәсіп, жұмыс орны, еңбек тәртібі және әріптестер."
-           data-ru="Профессия, рабочее место, трудовая дисциплина и коллеги.">
-          Кәсіп, жұмыс орны, еңбек тәртібі және әріптестер.
-        </p>
-      </div>
-    </a>
-
-    <a href="#subunit4" class="block-card">
-      <div>
-        <div class="block-num">4</div>
-        <h3 data-kz="Саяхат. Бос уақыт. Қызығушылық" data-ru="Путешествия. Свободное время. Интересы">
-          Саяхат. Бос уақыт. Қызығушылық
-        </h3>
-        <p data-kz="Сапар, демалыс, туризм, хобби және қызығушылықтар."
-           data-ru="Поездки, отдых, туризм, хобби и интересы.">
-          Сапар, демалыс, туризм, хобби және қызығушылықтар.
-        </p>
-      </div>
-    </a>
-
-    <a href="#subunit5" class="block-card">
-      <div>
-        <div class="block-num">5</div>
-        <h3 data-kz="Салауатты өмір салты" data-ru="Здоровый образ жизни">
-          Салауатты өмір салты
-        </h3>
-        <p data-kz="Денсаулық, дұрыс тамақтану, спорт және белсенді өмір."
-           data-ru="Здоровье, правильное питание, спорт и активный образ жизни.">
-          Денсаулық, дұрыс тамақтану, спорт және белсенді өмір.
-        </p>
-      </div>
-    </a>
+<a href="#subunit2" class="block-card">
+  <div>
+    <div class="block-num">2</div>
+    <h3 data-kz="Неке және отбасы. Отбасы құндылықтары"
+        data-ru="Брак и семья. Семейные ценности">
+      Неке және отбасы. Отбасы құндылықтары
+    </h3>
+    <p data-kz="Неке, отбасы, отбасылық құндылықтар және тәрбие."
+       data-ru="Брак, семья, семейные ценности и воспитание.">
+      Неке, отбасы, отбасылық құндылықтар және тәрбие.
+    </p>
+  </div>
+</a>
+<a href="#subunit3" class="block-card">
+  <div>
+    <div class="block-num">3</div>
+    <h3 data-kz="Мамандық. Жұмыс. Әріптестер"
+        data-ru="Профессия. Работа. Коллеги">
+      Мамандық. Жұмыс. Әріптестер
+    </h3>
+    <p data-kz="Кәсіп, жұмыс орны, еңбек тәртібі және әріптестер."
+       data-ru="Профессия, рабочее место, трудовая дисциплина и коллеги.">
+      Кәсіп, жұмыс орны, еңбек тәртібі және әріптестер.
+    </p>
+  </div>
+</a>
+<a href="#subunit4" class="block-card">
+  <div>
+    <div class="block-num">4</div>
+    <h3 data-kz="Саяхат. Бос уақыт. Қызығушылық"
+        data-ru="Путешествия. Свободное время. Интересы">
+      Саяхат. Бос уақыт. Қызығушылық
+    </h3>
+    <p data-kz="Сапар, демалыс, туризм, хобби және қызығушылықтар."
+       data-ru="Поездки, отдых, туризм, хобби и интересы.">
+      Сапар, демалыс, туризм, хобби және қызығушылықтар.
+    </p>
+  </div>
+</a>
+<a href="#subunit5" class="block-card">
+  <div>
+    <div class="block-num">5</div>
+    <h3 data-kz="Салауатты өмір салты"
+        data-ru="Здоровый образ жизни">
+      Салауатты өмір салты
+    </h3>
+    <p data-kz="Денсаулық, дұрыс тамақтану, спорт және белсенді өмір."
+       data-ru="Здоровье, правильное питание, спорт и активный образ жизни.">
+      Денсаулық, дұрыс тамақтану, спорт және белсенді өмір.
+    </p>
+  </div>
+</a>
   </section>
-
   <section class="section" id="subunit1">
     <h2 data-kz="Subunit 1. Мен және менің достарым. Менің үйім"
         data-ru="Subunit 1. Я и мои друзья. Мой дом">
       Subunit 1. Мен және менің достарым. Менің үйім
     </h2>
-
-    <p class="section-desc"
-       data-kz="Танысу және үй туралы тыңдалым тапсырмалары."
-       data-ru="Listening-задания о знакомстве и доме.">
-      Танысу және үй туралы тыңдалым тапсырмалары.
-    </p>
-        <article class="listening-card" id="listening1">
-      <h3>Listening 1.1 — Meeting other students</h3>
-
-      <div class="listen-meta">
-        <span class="pill">Topic: Me and my friends</span>
-        <span class="pill">Level: A1–A2</span>
-        <span class="pill">Type: Dialogue</span>
-        <span class="pill">Audio: C1.m4a</span>
-      </div>
-
-      <div class="audio-box">
-        <audio controls preload="metadata">
-          <source src="C1.m4a" type="audio/mp4">
-          <source src="C1.m4a" type="audio/x-m4a">
-          Your browser does not support the audio element.
-        </audio>
-      </div>
-
-      <div class="tabs">
-        <button class="tab-btn active" onclick="openTab(this,'l1-test')">Test</button>
-        <button class="tab-btn" onclick="openTab(this,'l1-transcript')">Transcript</button>
-        <button class="tab-btn" onclick="openTab(this,'l1-translation')">
-          <span data-kz="Аударма" data-ru="Перевод">Аударма</span>
-        </button>
-        <button class="tab-btn" onclick="openTab(this,'l1-vocab')">Vocabulary</button>
-      </div>
-
-      <div class="tab-content active" id="l1-test">
-        <div id="l1Result" class="result"></div>
-
-        <div class="question" data-answer="1">
-          <p>1. What does the teacher ask the students to do?</p>
-          <label class="option"><input type="radio" name="l1q1" value="0"> Write down the important information</label>
-          <label class="option"><input type="radio" name="l1q1" value="1"> Turn to the people next to them and introduce themselves</label>
-          <label class="option"><input type="radio" name="l1q1" value="2"> Choose their university subjects immediately</label>
-          <label class="option"><input type="radio" name="l1q1" value="3"> Listen to a lecture about history</label>
-          <div class="explain">Correct answer: B. The teacher asks everyone to turn to the people next to them and introduce themselves.</div>
-        </div>
-
-        <div class="question" data-answer="2">
-          <p>2. Where is Cara from?</p>
-          <label class="option"><input type="radio" name="l1q2" value="0"> Manchester</label>
-          <label class="option"><input type="radio" name="l1q2" value="1"> Leeds</label>
-          <label class="option"><input type="radio" name="l1q2" value="2"> Glasgow</label>
-          <label class="option"><input type="radio" name="l1q2" value="3"> London</label>
-          <div class="explain">Correct answer: C. Cara says, “I’m from Glasgow.”</div>
-        </div>
-
-        <div class="question" data-answer="0">
-          <p>3. Why does Robert say he is half Scottish?</p>
-          <label class="option"><input type="radio" name="l1q3" value="0"> His mother is from near Glasgow</label>
-          <label class="option"><input type="radio" name="l1q3" value="1"> He grew up in Scotland</label>
-          <label class="option"><input type="radio" name="l1q3" value="2"> His father works in Glasgow</label>
-          <label class="option"><input type="radio" name="l1q3" value="3"> He studies Scottish history</label>
-          <div class="explain">Correct answer: A. Robert says his mum is from near Glasgow.</div>
-        </div>
-
-        <div class="question" data-answer="3">
-          <p>4. Where does Robert live now?</p>
-          <label class="option"><input type="radio" name="l1q4" value="0"> In Glasgow</label>
-          <label class="option"><input type="radio" name="l1q4" value="1"> In Leeds</label>
-          <label class="option"><input type="radio" name="l1q4" value="2"> Near London</label>
-          <label class="option"><input type="radio" name="l1q4" value="3"> Near Manchester</label>
-          <div class="explain">Correct answer: D. Robert says they live in England, near Manchester.</div>
-        </div>
-
-        <div class="question" data-answer="2">
-          <p>5. Where did Selim grow up?</p>
-          <label class="option"><input type="radio" name="l1q5" value="0"> In Scotland</label>
-          <label class="option"><input type="radio" name="l1q5" value="1"> Near Manchester</label>
-          <label class="option"><input type="radio" name="l1q5" value="2"> Near London</label>
-          <label class="option"><input type="radio" name="l1q5" value="3"> In Glasgow</label>
-          <div class="explain">Correct answer: C. Selim says he grew up near London.</div>
-        </div>
-
-        <div class="question" data-answer="1">
-          <p>6. What subjects is Selim studying?</p>
-          <label class="option"><input type="radio" name="l1q6" value="0"> History and French</label>
-          <label class="option"><input type="radio" name="l1q6" value="1"> History and German</label>
-          <label class="option"><input type="radio" name="l1q6" value="2"> History and maths</label>
-          <label class="option"><input type="radio" name="l1q6" value="3"> German and maths</label>
-          <div class="explain">Correct answer: B. Selim says, “I’m doing history and German.”</div>
-        </div>
-
-        <div class="question" data-answer="2">
-          <p>7. Why is Robert studying history with maths?</p>
-          <label class="option"><input type="radio" name="l1q7" value="0"> He wants to become a history teacher</label>
-          <label class="option"><input type="radio" name="l1q7" value="1"> His parents asked him to study both subjects</label>
-          <label class="option"><input type="radio" name="l1q7" value="2"> He could not decide between arts and sciences</label>
-          <label class="option"><input type="radio" name="l1q7" value="3"> Maths helps him remember historical dates</label>
-          <div class="explain">Correct answer: C. Robert says he could not decide between arts and sciences.</div>
-        </div>
-
-        <div class="question" data-answer="0">
-          <p>8. Which statement is correct according to the conversation?</p>
-          <label class="option"><input type="radio" name="l1q8" value="0"> Cara is studying history and French</label>
-          <label class="option"><input type="radio" name="l1q8" value="1"> Selim thinks French was easier than German</label>
-          <label class="option"><input type="radio" name="l1q8" value="2"> Robert lives in Scotland now</label>
-          <label class="option"><input type="radio" name="l1q8" value="3"> Cara says German is very easy</label>
-          <div class="explain">Correct answer: A. Cara says she is doing history and French.</div>
-        </div>
-
-        <button class="check-btn" onclick="checkBlock('l1')">Show results</button>
-      </div>
-
-      <div class="tab-content" id="l1-transcript">
-        <div class="transcript">
-          <p><span class="speaker">Teacher:</span> So, now you've got the important information, it's time to meet each other. Everyone turn to the people next to you and introduce yourselves.</p>
-          <p><span class="speaker">Cara:</span> So, hi. I'm Cara. And you are?</p>
-          <p><span class="speaker">Robert:</span> Robert.</p>
-          <p><span class="speaker">Selim:</span> Selim.</p>
-          <p><span class="speaker">Cara:</span> Nice to meet you!</p>
-          <p><span class="speaker">Robert and Selim:</span> You too.</p>
-          <p><span class="speaker">Robert:</span> Nice accent. Where are you from?</p>
-          <p><span class="speaker">Cara:</span> I'm from Glasgow.</p>
-          <p><span class="speaker">Robert:</span> Oh, really? My mum's from near Glasgow, so I'm half Scottish.</p>
-          <p><span class="speaker">Cara:</span> Cool. Do you live in Scotland?</p>
-          <p><span class="speaker">Robert:</span> No, we live in England, near Manchester. My dad's from there. What about you, Selim?</p>
-          <p><span class="speaker">Selim:</span> I'm from Leeds originally but I grew up near London.</p>
-          <p><span class="speaker">Cara:</span> Are you both doing history on its own?</p>
-          <p><span class="speaker">Selim:</span> No. I'm doing history and German.</p>
-          <p><span class="speaker">Robert:</span> I'm doing it with maths, actually.</p>
-          <p><span class="speaker">Selim:</span> History and maths. That's different!</p>
-          <p><span class="speaker">Robert:</span> Yeah, I couldn't decide between arts and sciences. Maths doesn't help with remembering dates, though! And you?</p>
-          <p><span class="speaker">Cara:</span> I'm doing history and French.</p>
-          <p><span class="speaker">Selim:</span> I wanted to do French but German was easier, so I took that.</p>
-          <p><span class="speaker">Cara:</span> German is so hard!</p>
-        </div>
-      </div>
-
-      <div class="tab-content" id="l1-translation">
-        <div class="translation lang-kz">
-          <p><span class="speaker">Teacher:</span> Сонымен, енді сіздер маңызды ақпаратты алдыңыздар, бір-біріңізбен танысатын уақыт келді. Барлығыңыз қасыңыздағы адамдарға бұрылып, өздеріңізді таныстырыңыздар.</p>
-          <p><span class="speaker">Cara:</span> Сонымен, сәлем. Мен Карамын. Ал сендер?</p>
-          <p><span class="speaker">Robert:</span> Роберт.</p>
-          <p><span class="speaker">Selim:</span> Селим.</p>
-          <p><span class="speaker">Cara:</span> Танысқаныма қуаныштымын!</p>
-          <p><span class="speaker">Robert and Selim:</span> Біз де.</p>
-          <p><span class="speaker">Robert:</span> Акцентің жақсы екен. Қайдансың?</p>
-          <p><span class="speaker">Cara:</span> Мен Глазгоданмын.</p>
-          <p><span class="speaker">Robert:</span> Рас па? Менің анам Глазго маңынан, сондықтан мен жартылай шотландпын.</p>
-          <p><span class="speaker">Cara:</span> Керемет. Сен Шотландияда тұрасың ба?</p>
-          <p><span class="speaker">Robert:</span> Жоқ, біз Англияда, Манчестерге жақын жерде тұрамыз. Әкем сол жақтан. Ал сен ше, Селим?</p>
-          <p><span class="speaker">Selim:</span> Мен бастапқыда Лидстенмін, бірақ Лондон маңында өстім.</p>
-          <p><span class="speaker">Cara:</span> Екеуің де тарихты жеке оқып жатырсыңдар ма?</p>
-          <p><span class="speaker">Selim:</span> Жоқ. Мен тарих пен неміс тілін оқып жатырмын.</p>
-          <p><span class="speaker">Robert:</span> Ал мен оны математикамен бірге оқып жатырмын, шынында.</p>
-          <p><span class="speaker">Selim:</span> Тарих пен математика. Бұл ерекше екен!</p>
-          <p><span class="speaker">Robert:</span> Иә, мен өнер мен ғылымның бірін таңдай алмадым. Бірақ математика даталарды есте сақтауға көмектеспейді! Ал сен?</p>
-          <p><span class="speaker">Cara:</span> Мен тарих пен француз тілін оқып жатырмын.</p>
-          <p><span class="speaker">Selim:</span> Мен француз тілін оқығым келген, бірақ неміс тілі оңайырақ болды, сондықтан соны таңдадым.</p>
-          <p><span class="speaker">Cara:</span> Неміс тілі өте қиын!</p>
-        </div>
-
-        <div class="translation lang-ru" style="display:none">
-          <p><span class="speaker">Teacher:</span> Итак, теперь вы получили важную информацию, пришло время познакомиться друг с другом. Все повернитесь к людям рядом с вами и представьтесь.</p>
-          <p><span class="speaker">Cara:</span> Итак, привет. Я Кара. А вы?</p>
-          <p><span class="speaker">Robert:</span> Роберт.</p>
-          <p><span class="speaker">Selim:</span> Селим.</p>
-          <p><span class="speaker">Cara:</span> Рада познакомиться!</p>
-          <p><span class="speaker">Robert and Selim:</span> Мы тоже.</p>
-          <p><span class="speaker">Robert:</span> Хороший акцент. Откуда ты?</p>
-          <p><span class="speaker">Cara:</span> Я из Глазго.</p>
-          <p><span class="speaker">Robert:</span> Правда? Моя мама из района рядом с Глазго, поэтому я наполовину шотландец.</p>
-          <p><span class="speaker">Cara:</span> Классно. Ты живёшь в Шотландии?</p>
-          <p><span class="speaker">Robert:</span> Нет, мы живём в Англии, недалеко от Манчестера. Мой папа оттуда. А ты, Селим?</p>
-          <p><span class="speaker">Selim:</span> Я родом из Лидса, но вырос недалеко от Лондона.</p>
-          <p><span class="speaker">Cara:</span> Вы оба изучаете только историю?</p>
-          <p><span class="speaker">Selim:</span> Нет. Я изучаю историю и немецкий.</p>
-          <p><span class="speaker">Robert:</span> А я, вообще-то, изучаю её с математикой.</p>
-          <p><span class="speaker">Selim:</span> История и математика. Это необычно!</p>
-          <p><span class="speaker">Robert:</span> Да, я не мог выбрать между искусствами и науками. Правда, математика не помогает запоминать даты! А ты?</p>
-          <p><span class="speaker">Cara:</span> Я изучаю историю и французский.</p>
-          <p><span class="speaker">Selim:</span> Я хотел изучать французский, но немецкий был легче, поэтому я выбрал его.</p>
-          <p><span class="speaker">Cara:</span> Немецкий такой трудный!</p>
-        </div>
-      </div>
-
-      <div class="tab-content" id="l1-vocab">
-        <div class="vocab-grid">
-          <div class="vocab-item"><b>introduce yourselves</b><span class="lang-kz">өздеріңді таныстырыңдар</span><span class="lang-ru" style="display:none">представьтесь</span></div>
-          <div class="vocab-item"><b>accent</b><span class="lang-kz">акцент, сөйлеу мәнері</span><span class="lang-ru" style="display:none">акцент, произношение</span></div>
-          <div class="vocab-item"><b>half Scottish</b><span class="lang-kz">жартылай шотланд</span><span class="lang-ru" style="display:none">наполовину шотландец</span></div>
-          <div class="vocab-item"><b>originally</b><span class="lang-kz">бастапқыда, туған жері бойынша</span><span class="lang-ru" style="display:none">изначально, родом</span></div>
-          <div class="vocab-item"><b>grew up</b><span class="lang-kz">өсіп-жетті</span><span class="lang-ru" style="display:none">вырос / выросла</span></div>
-          <div class="vocab-item"><b>on its own</b><span class="lang-kz">жеке өзі, бөлек</span><span class="lang-ru" style="display:none">отдельно, само по себе</span></div>
-          <div class="vocab-item"><b>decide between</b><span class="lang-kz">екеуінің бірін таңдау</span><span class="lang-ru" style="display:none">выбирать между</span></div>
-        </div>
-      </div>
-    </article>
-
-    <article class="listening-card" id="listening2">
-      <h3>Listening 1.2 — My new flat</h3>
-
-      <div class="listen-meta">
-        <span class="pill">Topic: My home</span>
-        <span class="pill">Level: A2–B1</span>
-        <span class="pill">Type: Dialogue</span>
-        <span class="pill">Browser audio</span>
-      </div>
-
-      <div class="audio-box">
-        <div class="browser-player">
-          <button class="play-circle" onclick="toggleBrowserAudio('l2-speech', this)">▶</button>
-          <div>
-            <div class="player-title">Browser audio</div>
-            <div class="player-subtitle">My new flat</div>
-          </div>
-        </div>
-      </div>
-
-      <div id="l2-speech" class="speech-text">
-        Anna: Hi, Tom. Come in. This is my new flat.
-        Tom: Thanks, Anna. It looks very bright. Do you live here alone?
-        Anna: No, I share it with my cousin. It isn’t very big, but it’s comfortable.
-        Tom: How many rooms are there?
-        Anna: There are two bedrooms, a small living room, a kitchen and one bathroom. My bedroom is on the left. It has a desk, a bed and a wardrobe.
-        Tom: That sounds nice. Is it close to the university?
-        Anna: Yes, it takes about fifteen minutes by bus. There is also a small shop and a bus stop near the building.
-        Tom: What do you like most about the flat?
-        Anna: I like the living room. It has a big window, so there is a lot of light. In the evening, we sit there, drink tea and talk about our day.
-        Tom: Do you have a balcony?
-        Anna: Yes, but it’s tiny. We keep two plants there. In summer, I sometimes read on the balcony.
-        Tom: Is there anything you don’t like?
-        Anna: The kitchen is quite small, and the neighbours upstairs are sometimes noisy. But I still like this place because it feels like home.
-        Tom: I understand. A home doesn’t have to be perfect. It just needs to be warm and peaceful.
-        Anna: Exactly. For me, home is a place where I can rest, study and feel safe.
-      </div>
-
-      <div class="tabs">
-        <button class="tab-btn active" onclick="openTab(this,'l2-test')">Test</button>
-        <button class="tab-btn" onclick="openTab(this,'l2-transcript')">Transcript</button>
-        <button class="tab-btn" onclick="openTab(this,'l2-translation')">
-          <span data-kz="Аударма" data-ru="Перевод">Аударма</span>
-        </button>
-        <button class="tab-btn" onclick="openTab(this,'l2-vocab')">Vocabulary</button>
-      </div>
-
-      <div class="tab-content active" id="l2-test">
-        <div id="l2Result" class="result"></div>
-
-        <div class="question" data-answer="1">
-          <p>1. What is Anna showing Tom?</p>
-          <label class="option"><input type="radio" name="l2q1" value="0"> Her university classroom</label>
-          <label class="option"><input type="radio" name="l2q1" value="1"> Her new flat</label>
-          <label class="option"><input type="radio" name="l2q1" value="2"> Her cousin’s office</label>
-          <label class="option"><input type="radio" name="l2q1" value="3"> A shop near her home</label>
-          <div class="explain">Correct answer: B. Anna says, “This is my new flat.”</div>
-        </div>
-
-        <div class="question" data-answer="2">
-          <p>2. Who does Anna share the flat with?</p>
-          <label class="option"><input type="radio" name="l2q2" value="0"> Her friend Tom</label>
-          <label class="option"><input type="radio" name="l2q2" value="1"> Her parents</label>
-          <label class="option"><input type="radio" name="l2q2" value="2"> Her cousin</label>
-          <label class="option"><input type="radio" name="l2q2" value="3"> Her teacher</label>
-          <div class="explain">Correct answer: C. Anna says she shares the flat with her cousin.</div>
-        </div>
-
-        <div class="question" data-answer="0">
-          <p>3. How many bedrooms are there in the flat?</p>
-          <label class="option"><input type="radio" name="l2q3" value="0"> Two</label>
-          <label class="option"><input type="radio" name="l2q3" value="1"> Three</label>
-          <label class="option"><input type="radio" name="l2q3" value="2"> One</label>
-          <label class="option"><input type="radio" name="l2q3" value="3"> Four</label>
-          <div class="explain">Correct answer: A. Anna says there are two bedrooms.</div>
-        </div>
-
-        <div class="question" data-answer="3">
-          <p>4. What is in Anna’s bedroom?</p>
-          <label class="option"><input type="radio" name="l2q4" value="0"> A sofa, a TV and a plant</label>
-          <label class="option"><input type="radio" name="l2q4" value="1"> A table, a mirror and a balcony</label>
-          <label class="option"><input type="radio" name="l2q4" value="2"> A piano, a chair and a shelf</label>
-          <label class="option"><input type="radio" name="l2q4" value="3"> A desk, a bed and a wardrobe</label>
-          <div class="explain">Correct answer: D. Anna says her bedroom has a desk, a bed and a wardrobe.</div>
-        </div>
-
-        <div class="question" data-answer="1">
-          <p>5. How long does it take to get to the university by bus?</p>
-          <label class="option"><input type="radio" name="l2q5" value="0"> About five minutes</label>
-          <label class="option"><input type="radio" name="l2q5" value="1"> About fifteen minutes</label>
-          <label class="option"><input type="radio" name="l2q5" value="2"> About thirty minutes</label>
-          <label class="option"><input type="radio" name="l2q5" value="3"> About forty-five minutes</label>
-          <div class="explain">Correct answer: B. Anna says it takes about fifteen minutes by bus.</div>
-        </div>
-
-        <div class="question" data-answer="0">
-          <p>6. What does Anna like most about the flat?</p>
-          <label class="option"><input type="radio" name="l2q6" value="0"> The living room</label>
-          <label class="option"><input type="radio" name="l2q6" value="1"> The kitchen</label>
-          <label class="option"><input type="radio" name="l2q6" value="2"> The bathroom</label>
-          <label class="option"><input type="radio" name="l2q6" value="3"> The building entrance</label>
-          <div class="explain">Correct answer: A. Anna says she likes the living room because it has a big window and a lot of light.</div>
-        </div>
-
-        <div class="question" data-answer="2">
-          <p>7. What does Anna sometimes do on the balcony in summer?</p>
-          <label class="option"><input type="radio" name="l2q7" value="0"> She cooks dinner</label>
-          <label class="option"><input type="radio" name="l2q7" value="1"> She studies with Tom</label>
-          <label class="option"><input type="radio" name="l2q7" value="2"> She reads</label>
-          <label class="option"><input type="radio" name="l2q7" value="3"> She waters a tree</label>
-          <div class="explain">Correct answer: C. Anna says she sometimes reads on the balcony in summer.</div>
-        </div>
-
-        <div class="question" data-answer="3">
-          <p>8. What is the main idea of the conversation?</p>
-          <label class="option"><input type="radio" name="l2q8" value="0"> Anna wants to sell her flat</label>
-          <label class="option"><input type="radio" name="l2q8" value="1"> Tom is looking for a new university</label>
-          <label class="option"><input type="radio" name="l2q8" value="2"> Anna complains about public transport</label>
-          <label class="option"><input type="radio" name="l2q8" value="3"> Anna describes her home and why she likes it</label>
-          <div class="explain">Correct answer: D. The conversation is mainly about Anna’s flat, its rooms, location and why it feels like home.</div>
-        </div>
-
-        <button class="check-btn" onclick="checkBlock('l2')">Show results</button>
-      </div>
-
-      <div class="tab-content" id="l2-transcript">
-        <div class="transcript">
-          <p><span class="speaker">Anna:</span> Hi, Tom. Come in. This is my new flat.</p>
-          <p><span class="speaker">Tom:</span> Thanks, Anna. It looks very bright. Do you live here alone?</p>
-          <p><span class="speaker">Anna:</span> No, I share it with my cousin. It isn’t very big, but it’s comfortable.</p>
-          <p><span class="speaker">Tom:</span> How many rooms are there?</p>
-          <p><span class="speaker">Anna:</span> There are two bedrooms, a small living room, a kitchen and one bathroom. My bedroom is on the left. It has a desk, a bed and a wardrobe.</p>
-          <p><span class="speaker">Tom:</span> That sounds nice. Is it close to the university?</p>
-          <p><span class="speaker">Anna:</span> Yes, it takes about fifteen minutes by bus. There is also a small shop and a bus stop near the building.</p>
-          <p><span class="speaker">Tom:</span> What do you like most about the flat?</p>
-          <p><span class="speaker">Anna:</span> I like the living room. It has a big window, so there is a lot of light. In the evening, we sit there, drink tea and talk about our day.</p>
-          <p><span class="speaker">Tom:</span> Do you have a balcony?</p>
-          <p><span class="speaker">Anna:</span> Yes, but it’s tiny. We keep two plants there. In summer, I sometimes read on the balcony.</p>
-          <p><span class="speaker">Tom:</span> Is there anything you don’t like?</p>
-          <p><span class="speaker">Anna:</span> The kitchen is quite small, and the neighbours upstairs are sometimes noisy. But I still like this place because it feels like home.</p>
-          <p><span class="speaker">Tom:</span> I understand. A home doesn’t have to be perfect. It just needs to be warm and peaceful.</p>
-          <p><span class="speaker">Anna:</span> Exactly. For me, home is a place where I can rest, study and feel safe.</p>
-        </div>
-      </div>
-
-      <div class="tab-content" id="l2-translation">
-        <div class="translation lang-kz">
-          <p><span class="speaker">Anna:</span> Сәлем, Том. Кір. Бұл менің жаңа пәтерім.</p>
-          <p><span class="speaker">Tom:</span> Рақмет, Анна. Ол өте жарық көрінеді. Сен мұнда жалғыз тұрасың ба?</p>
-          <p><span class="speaker">Anna:</span> Жоқ, мен оны немере туысыммен бірге бөлісемін. Ол өте үлкен емес, бірақ жайлы.</p>
-          <p><span class="speaker">Tom:</span> Мұнда қанша бөлме бар?</p>
-          <p><span class="speaker">Anna:</span> Екі жатын бөлме, шағын қонақ бөлме, асүй және бір жуынатын бөлме бар. Менің жатын бөлмем сол жақта. Онда үстел, төсек және киім шкафы бар.</p>
-          <p><span class="speaker">Tom:</span> Жақсы сияқты. Ол университетке жақын ба?</p>
-          <p><span class="speaker">Anna:</span> Иә, автобуспен шамамен он бес минут кетеді. Ғимараттың жанында шағын дүкен және автобус аялдамасы да бар.</p>
-          <p><span class="speaker">Tom:</span> Пәтердің несі саған ең қатты ұнайды?</p>
-          <p><span class="speaker">Anna:</span> Маған қонақ бөлме ұнайды. Онда үлкен терезе бар, сондықтан жарық көп. Кешке біз сонда отырып, шай ішеміз және күніміз туралы сөйлесеміз.</p>
-          <p><span class="speaker">Tom:</span> Сендерде балкон бар ма?</p>
-          <p><span class="speaker">Anna:</span> Иә, бірақ ол өте кішкентай. Біз онда екі өсімдік ұстаймыз. Жазда мен кейде балконда кітап оқимын.</p>
-          <p><span class="speaker">Tom:</span> Саған ұнамайтын нәрсе бар ма?</p>
-          <p><span class="speaker">Anna:</span> Асүй өте кішкентай, ал жоғарыдағы көршілер кейде шу шығарады. Бірақ мен бұл жерді бәрібір ұнатамын, өйткені ол үй сияқты сезіледі.</p>
-          <p><span class="speaker">Tom:</span> Түсінемін. Үй мінсіз болуы міндетті емес. Ол жай ғана жылы және тыныш болуы керек.</p>
-          <p><span class="speaker">Anna:</span> Дәл солай. Мен үшін үй — демалатын, оқитын және өзімді қауіпсіз сезінетін жер.</p>
-        </div>
-
-        <div class="translation lang-ru" style="display:none">
-          <p><span class="speaker">Anna:</span> Привет, Том. Заходи. Это моя новая квартира.</p>
-          <p><span class="speaker">Tom:</span> Спасибо, Анна. Она выглядит очень светлой. Ты живёшь здесь одна?</p>
-          <p><span class="speaker">Anna:</span> Нет, я делю её со своей кузиной. Она не очень большая, но удобная.</p>
-          <p><span class="speaker">Tom:</span> Сколько здесь комнат?</p>
-          <p><span class="speaker">Anna:</span> Здесь две спальни, небольшая гостиная, кухня и одна ванная комната. Моя спальня слева. В ней есть письменный стол, кровать и шкаф.</p>
-          <p><span class="speaker">Tom:</span> Звучит хорошо. Она близко к университету?</p>
-          <p><span class="speaker">Anna:</span> Да, на автобусе это занимает около пятнадцати минут. Рядом со зданием также есть маленький магазин и автобусная остановка.</p>
-          <p><span class="speaker">Tom:</span> Что тебе больше всего нравится в квартире?</p>
-          <p><span class="speaker">Anna:</span> Мне нравится гостиная. В ней большое окно, поэтому там много света. Вечером мы сидим там, пьём чай и говорим о нашем дне.</p>
-          <p><span class="speaker">Tom:</span> У вас есть балкон?</p>
-          <p><span class="speaker">Anna:</span> Да, но он крошечный. Мы держим там два растения. Летом я иногда читаю на балконе.</p>
-          <p><span class="speaker">Tom:</span> Есть что-то, что тебе не нравится?</p>
-          <p><span class="speaker">Anna:</span> Кухня довольно маленькая, а соседи сверху иногда шумные. Но мне всё равно нравится это место, потому что оно ощущается как дом.</p>
-          <p><span class="speaker">Tom:</span> Я понимаю. Дом не должен быть идеальным. Он просто должен быть тёплым и спокойным.</p>
-          <p><span class="speaker">Anna:</span> Именно. Для меня дом — это место, где я могу отдыхать, учиться и чувствовать себя в безопасности.</p>
-        </div>
-      </div>
-
-      <div class="tab-content" id="l2-vocab">
-        <div class="vocab-grid">
-          <div class="vocab-item"><b>flat</b><span class="lang-kz">пәтер</span><span class="lang-ru" style="display:none">квартира</span></div>
-          <div class="vocab-item"><b>share</b><span class="lang-kz">бірге тұру, бөлісу</span><span class="lang-ru" style="display:none">делить, жить вместе</span></div>
-          <div class="vocab-item"><b>comfortable</b><span class="lang-kz">ыңғайлы, жайлы</span><span class="lang-ru" style="display:none">удобный, уютный</span></div>
-          <div class="vocab-item"><b>wardrobe</b><span class="lang-kz">киім шкафы</span><span class="lang-ru" style="display:none">шкаф для одежды</span></div>
-          <div class="vocab-item"><b>bus stop</b><span class="lang-kz">автобус аялдамасы</span><span class="lang-ru" style="display:none">автобусная остановка</span></div>
-          <div class="vocab-item"><b>neighbours</b><span class="lang-kz">көршілер</span><span class="lang-ru" style="display:none">соседи</span></div>
-          <div class="vocab-item"><b>feel safe</b><span class="lang-kz">өзін қауіпсіз сезіну</span><span class="lang-ru" style="display:none">чувствовать себя в безопасности</span></div>
-        </div>
-      </div>
-    </article>
-  </section>
+<p class="section-desc"
+   data-kz="Танысу, достық қарым-қатынас және үй туралы тыңдалым тапсырмалары."
+   data-ru="Listening-задания о знакомстве, дружеском общении и доме.">
+  Танысу, достық қарым-қатынас және үй туралы тыңдалым тапсырмалары.
+</p>
+<article class="listening-card" id="listening1">
+  <h3>Listening 1.1 — Meeting other students</h3>
+  <div class="listen-meta">
+    <span class="pill">Topic: Me and my friends</span>
+    <span class="pill">Level: A1–A2</span>
+    <span class="pill">Type: Dialogue</span>
+    <span class="pill">Audio: C1.m4a</span>
+  </div>
+  <div class="audio-box">
+    <audio controls preload="metadata">
+      <source src="C1.m4a" type="audio/mp4">
+      <source src="C1.m4a" type="audio/x-m4a">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+  <div class="tabs">
+    <button class="tab-btn active" onclick="openTab(this,'l1-test')">Test</button>
+    <button class="tab-btn" onclick="openTab(this,'l1-transcript')">Transcript</button>
+    <button class="tab-btn" onclick="openTab(this,'l1-translation')">
+      <span data-kz="Аударма" data-ru="Перевод">Аударма</span>
+    </button>
+    <button class="tab-btn" onclick="openTab(this,'l1-vocab')">Vocabulary</button>
+  </div>
+  <div class="tab-content active" id="l1-test">
+    <div id="l1Result" class="result"></div>
+    <div class="question" data-answer="1">
+      <p>1. What does the teacher ask the students to do?</p>
+      <label class="option"><input type="radio" name="l1q1" value="0"> Write down the important information</label>
+      <label class="option"><input type="radio" name="l1q1" value="1"> Turn to the people next to them and introduce themselves</label>
+      <label class="option"><input type="radio" name="l1q1" value="2"> Choose their university subjects immediately</label>
+      <label class="option"><input type="radio" name="l1q1" value="3"> Listen to a lecture about history</label>
+      <div class="explain">Correct answer: B. The teacher asks everyone to turn to the people next to them and introduce themselves.</div>
+    </div>
+    <div class="question" data-answer="2">
+      <p>2. Where is Cara from?</p>
+      <label class="option"><input type="radio" name="l1q2" value="0"> Manchester</label>
+      <label class="option"><input type="radio" name="l1q2" value="1"> Leeds</label>
+      <label class="option"><input type="radio" name="l1q2" value="2"> Glasgow</label>
+      <label class="option"><input type="radio" name="l1q2" value="3"> London</label>
+      <div class="explain">Correct answer: C. Cara says, “I’m from Glasgow.”</div>
+    </div>
+    <div class="question" data-answer="0">
+      <p>3. Why does Robert say he is half Scottish?</p>
+      <label class="option"><input type="radio" name="l1q3" value="0"> His mother is from near Glasgow</label>
+      <label class="option"><input type="radio" name="l1q3" value="1"> He grew up in Scotland</label>
+      <label class="option"><input type="radio" name="l1q3" value="2"> His father works in Glasgow</label>
+      <label class="option"><input type="radio" name="l1q3" value="3"> He studies Scottish history</label>
+      <div class="explain">Correct answer: A. Robert says his mum is from near Glasgow.</div>
+    </div>
+    <div class="question" data-answer="3">
+      <p>4. Where does Robert live now?</p>
+      <label class="option"><input type="radio" name="l1q4" value="0"> In Glasgow</label>
+      <label class="option"><input type="radio" name="l1q4" value="1"> In Leeds</label>
+      <label class="option"><input type="radio" name="l1q4" value="2"> Near London</label>
+      <label class="option"><input type="radio" name="l1q4" value="3"> Near Manchester</label>
+      <div class="explain">Correct answer: D. Robert says they live in England, near Manchester.</div>
+    </div>
+    <div class="question" data-answer="2">
+      <p>5. Where did Selim grow up?</p>
+      <label class="option"><input type="radio" name="l1q5" value="0"> In Scotland</label>
+      <label class="option"><input type="radio" name="l1q5" value="1"> Near Manchester</label>
+      <label class="option"><input type="radio" name="l1q5" value="2"> Near London</label>
+      <label class="option"><input type="radio" name="l1q5" value="3"> In Glasgow</label>
+      <div class="explain">Correct answer: C. Selim says he grew up near London.</div>
+    </div>
+    <div class="question" data-answer="1">
+      <p>6. What subjects is Selim studying?</p>
+      <label class="option"><input type="radio" name="l1q6" value="0"> History and French</label>
+      <label class="option"><input type="radio" name="l1q6" value="1"> History and German</label>
+      <label class="option"><input type="radio" name="l1q6" value="2"> History and maths</label>
+      <label class="option"><input type="radio" name="l1q6" value="3"> German and maths</label>
+      <div class="explain">Correct answer: B. Selim says, “I’m doing history and German.”</div>
+    </div>
+    <div class="question" data-answer="2">
+      <p>7. Why is Robert studying history with maths?</p>
+      <label class="option"><input type="radio" name="l1q7" value="0"> He wants to become a history teacher</label>
+      <label class="option"><input type="radio" name="l1q7" value="1"> His parents asked him to study both subjects</label>
+      <label class="option"><input type="radio" name="l1q7" value="2"> He could not decide between arts and sciences</label>
+      <label class="option"><input type="radio" name="l1q7" value="3"> Maths helps him remember historical dates</label>
+      <div class="explain">Correct answer: C. Robert says he could not decide between arts and sciences.</div>
+    </div>
+    <div class="question" data-answer="0">
+      <p>8. Which statement is correct according to the conversation?</p>
+      <label class="option"><input type="radio" name="l1q8" value="0"> Cara is studying history and French</label>
+      <label class="option"><input type="radio" name="l1q8" value="1"> Selim thinks French was easier than German</label>
+      <label class="option"><input type="radio" name="l1q8" value="2"> Robert lives in Scotland now</label>
+      <label class="option"><input type="radio" name="l1q8" value="3"> Cara says German is very easy</label>
+      <div class="explain">Correct answer: A. Cara says she is doing history and French.</div>
+    </div>
+    <button class="check-btn" onclick="checkBlock('l1')">Show results</button>
+  </div>
+  <div class="tab-content" id="l1-transcript">
+    <div class="transcript">
+      <p><span class="speaker">Teacher:</span> So, now you've got the important information, it's time to meet each other. Everyone turn to the people next to you and introduce yourselves.</p>
+      <p><span class="speaker">Cara:</span> So, hi. I'm Cara. And you are?</p>
+      <p><span class="speaker">Robert:</span> Robert.</p>
+      <p><span class="speaker">Selim:</span> Selim.</p>
+      <p><span class="speaker">Cara:</span> Nice to meet you!</p>
+      <p><span class="speaker">Robert and Selim:</span> You too.</p>
+      <p><span class="speaker">Robert:</span> Nice accent. Where are you from?</p>
+      <p><span class="speaker">Cara:</span> I'm from Glasgow.</p>
+      <p><span class="speaker">Robert:</span> Oh, really? My mum's from near Glasgow, so I'm half Scottish.</p>
+      <p><span class="speaker">Cara:</span> Cool. Do you live in Scotland?</p>
+      <p><span class="speaker">Robert:</span> No, we live in England, near Manchester. My dad's from there. What about you, Selim?</p>
+      <p><span class="speaker">Selim:</span> I'm from Leeds originally but I grew up near London.</p>
+      <p><span class="speaker">Cara:</span> Are you both doing history on its own?</p>
+      <p><span class="speaker">Selim:</span> No. I'm doing history and German.</p>
+      <p><span class="speaker">Robert:</span> I'm doing it with maths, actually.</p>
+      <p><span class="speaker">Selim:</span> History and maths. That's different!</p>
+      <p><span class="speaker">Robert:</span> Yeah, I couldn't decide between arts and sciences. Maths doesn't help with remembering dates, though! And you?</p>
+      <p><span class="speaker">Cara:</span> I'm doing history and French.</p>
+      <p><span class="speaker">Selim:</span> I wanted to do French but German was easier, so I took that.</p>
+      <p><span class="speaker">Cara:</span> German is so hard!</p>
+    </div>
+  </div>
+  <div class="tab-content" id="l1-translation">
+    <div class="translation lang-kz">
+      <p><span class="speaker">Teacher:</span> Сонымен, енді сіздер маңызды ақпаратты алдыңыздар, бір-біріңізбен танысатын уақыт келді. Барлығыңыз қасыңыздағы адамдарға бұрылып, өздеріңізді таныстырыңыздар.</p>
+      <p><span class="speaker">Cara:</span> Сонымен, сәлем. Мен Карамын. Ал сендер?</p>
+      <p><span class="speaker">Robert:</span> Роберт.</p>
+      <p><span class="speaker">Selim:</span> Селим.</p>
+      <p><span class="speaker">Cara:</span> Танысқаныма қуаныштымын!</p>
+      <p><span class="speaker">Robert and Selim:</span> Біз де.</p>
+      <p><span class="speaker">Robert:</span> Акцентің жақсы екен. Қайдансың?</p>
+      <p><span class="speaker">Cara:</span> Мен Глазгоданмын.</p>
+      <p><span class="speaker">Robert:</span> Рас па? Менің анам Глазго маңынан, сондықтан мен жартылай шотландпын.</p>
+      <p><span class="speaker">Cara:</span> Керемет. Сен Шотландияда тұрасың ба?</p>
+      <p><span class="speaker">Robert:</span> Жоқ, біз Англияда, Манчестерге жақын жерде тұрамыз. Әкем сол жақтан. Ал сен ше, Селим?</p>
+      <p><span class="speaker">Selim:</span> Мен бастапқыда Лидстенмін, бірақ Лондон маңында өстім.</p>
+      <p><span class="speaker">Cara:</span> Екеуің де тарихты жеке оқып жатырсыңдар ма?</p>
+      <p><span class="speaker">Selim:</span> Жоқ. Мен тарих пен неміс тілін оқып жатырмын.</p>
+      <p><span class="speaker">Robert:</span> Ал мен оны математикамен бірге оқып жатырмын, шынында.</p>
+      <p><span class="speaker">Selim:</span> Тарих пен математика. Бұл ерекше екен!</p>
+      <p><span class="speaker">Robert:</span> Иә, мен өнер мен ғылымның бірін таңдай алмадым. Бірақ математика даталарды есте сақтауға көмектеспейді! Ал сен?</p>
+      <p><span class="speaker">Cara:</span> Мен тарих пен француз тілін оқып жатырмын.</p>
+      <p><span class="speaker">Selim:</span> Мен француз тілін оқығым келген, бірақ неміс тілі оңайырақ болды, сондықтан соны таңдадым.</p>
+      <p><span class="speaker">Cara:</span> Неміс тілі өте қиын!</p>
+    </div>
+    <div class="translation lang-ru" style="display:none">
+      <p><span class="speaker">Teacher:</span> Итак, теперь вы получили важную информацию, пришло время познакомиться друг с другом. Все повернитесь к людям рядом с вами и представьтесь.</p>
+      <p><span class="speaker">Cara:</span> Итак, привет. Я Кара. А вы?</p>
+      <p><span class="speaker">Robert:</span> Роберт.</p>
+      <p><span class="speaker">Selim:</span> Селим.</p>
+      <p><span class="speaker">Cara:</span> Рада познакомиться!</p>
+      <p><span class="speaker">Robert and Selim:</span> Мы тоже.</p>
+      <p><span class="speaker">Robert:</span> Хороший акцент. Откуда ты?</p>
+      <p><span class="speaker">Cara:</span> Я из Глазго.</p>
+      <p><span class="speaker">Robert:</span> Правда? Моя мама из района рядом с Глазго, поэтому я наполовину шотландец.</p>
+      <p><span class="speaker">Cara:</span> Классно. Ты живёшь в Шотландии?</p>
+      <p><span class="speaker">Robert:</span> Нет, мы живём в Англии, недалеко от Манчестера. Мой папа оттуда. А ты, Селим?</p>
+      <p><span class="speaker">Selim:</span> Я родом из Лидса, но вырос недалеко от Лондона.</p>
+      <p><span class="speaker">Cara:</span> Вы оба изучаете только историю?</p>
+      <p><span class="speaker">Selim:</span> Нет. Я изучаю историю и немецкий.</p>
+      <p><span class="speaker">Robert:</span> А я, вообще-то, изучаю её с математикой.</p>
+      <p><span class="speaker">Selim:</span> История и математика. Это необычно!</p>
+      <p><span class="speaker">Robert:</span> Да, я не мог выбрать между искусствами и науками. Правда, математика не помогает запоминать даты! А ты?</p>
+      <p><span class="speaker">Cara:</span> Я изучаю историю и французский.</p>
+      <p><span class="speaker">Selim:</span> Я хотел изучать французский, но немецкий был легче, поэтому я выбрал его.</p>
+      <p><span class="speaker">Cara:</span> Немецкий такой трудный!</p>
+    </div>
+  </div>
+  <div class="tab-content" id="l1-vocab">
+    <div class="vocab-grid">
+      <div class="vocab-item"><b>introduce yourselves</b><span class="lang-kz">өздеріңді таныстырыңдар</span><span class="lang-ru" style="display:none">представьтесь</span></div>
+      <div class="vocab-item"><b>accent</b><span class="lang-kz">акцент, сөйлеу мәнері</span><span class="lang-ru" style="display:none">акцент, произношение</span></div>
+      <div class="vocab-item"><b>half Scottish</b><span class="lang-kz">жартылай шотланд</span><span class="lang-ru" style="display:none">наполовину шотландец</span></div>
+      <div class="vocab-item"><b>originally</b><span class="lang-kz">бастапқыда, туған жері бойынша</span><span class="lang-ru" style="display:none">изначально, родом</span></div>
+      <div class="vocab-item"><b>grew up</b><span class="lang-kz">өсіп-жетті</span><span class="lang-ru" style="display:none">вырос / выросла</span></div>
+      <div class="vocab-item"><b>on its own</b><span class="lang-kz">жеке өзі, бөлек</span><span class="lang-ru" style="display:none">отдельно, само по себе</span></div>
+      <div class="vocab-item"><b>decide between</b><span class="lang-kz">екеуінің бірін таңдау</span><span class="lang-ru" style="display:none">выбирать между</span></div>
+    </div>
+  </div>
+</article>
